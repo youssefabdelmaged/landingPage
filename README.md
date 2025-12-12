@@ -13,15 +13,7 @@ html_app/
 ├── index.html          # Main HTML entry point
 └── assets/             # Images, fonts, and other static assets
 
-```
 
-## 🎨 Styling
-
-This project uses CSS for styling.
-
-## 🙏 Acknowledgments
-
-- Built with [Rocket.new](https://rocket.new)
 - Powered by HTML and CSS
 
  
