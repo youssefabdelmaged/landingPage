@@ -1,0 +1,7077 @@
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      رواد اللياقة - دورات تدريبية معتمدة في اللياقة البدنية | معهد رواد اللياقة
+    </title>
+    <meta
+      name="description"
+      content="معهد رواد اللياقة أول معهد عربي متخصص في تدريب وتأهيل منطقة الكور. دورات معتمدة من وزارة الرياضة، محاضرين خبراء، وبرامج تدريبية شاملة لتطوير مهاراتك في اللياقة البدنية." />
+    <meta
+      name="keywords"
+      content="رواد اللياقة, دورات تدريبية, اللياقة البدنية, تدريب معتمد, وزارة الرياضة, إيهاب أبو العلا" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="رواد اللياقة - دورات تدريبية معتمدة في اللياقة البدنية" />
+    <meta
+      property="og:description"
+      content="معهد رواد اللياقة أول معهد عربي متخصص في تدريب وتأهيل منطقة الكور. دورات معتمدة من وزارة الرياضة." />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+
+    <style>
+      /* Reset and base styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        overflow-x: hidden;
+        width: 100%;
+      }
+
+      body {
+        font-family: "Almarai", Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #ffffff;
+        direction: rtl;
+        overflow-x: hidden;
+        width: 100%;
+        max-width: 100%;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Layout components */
+      .about-play-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        width: 120px;
+        height: 120px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        user-select: none;
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-user-select: none;
+        transition: transform 180ms ease;
+      }
+
+      /* Hover: slightly enlarge without changing position */
+      .about-play-btn:hover {
+        transform: translate(-50%, -50%) scale(1.05);
+      }
+
+      /* Make active/focus keep the same scale so clicking doesn't shrink/shift */
+      .about-play-btn:active,
+      .about-play-btn:focus {
+        transform: translate(-50%, -50%) scale(1.05) !important;
+      }
+
+      .align-end {
+        align-items: flex-end;
+      }
+
+      /* Header */
+      .header {
+        background-color: #ffffff;
+        padding: 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar {
+        padding: 12px 42px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .navbar-collapse {
+        justify-content: center;
+      }
+
+      .logo {
+        width: 144px;
+        height: 50px;
+        margin-right: auto;
+      }
+.nav-link{
+  font-size: 18px;
+}
+      .nav-link.active {
+        color: #324094 !important;
+      }
+
+      .nav-link:hover {
+        color: #324094 !important;
+        transition: color 0.3s ease;
+      }
+
+      .register-btn {
+        background-color: #f7941f;
+        color: #ffffff;
+        padding: 8px 28px;
+        border-radius: 6px;
+        border: none;
+        font-size: 12px;
+        font-weight: 700;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        transition: all 0.3s ease;
+        margin-left: 16px;
+      }
+
+      .register-btn:hover {
+        background-color: #e8850e;
+        transform: scale(1.05);
+      }
+
+      .navbar-toggler {
+        border-color: #f7941f;
+      }
+
+      .navbar-toggler:focus {
+        box-shadow: 0 0 0 0.25rem rgba(247, 148, 31, 0.25);
+      }
+
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23f7941f' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+      }
+
+      .hamburger {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+      }
+
+      /* Hero Section */
+      .hero-section {
+        background-image: url("../assets/images/threeFriends.jpg");
+        background-size: cover;
+        background-position: center top;
+        /* keep faces in view */
+        background-repeat: no-repeat;
+        border-radius: 24px;
+        padding: -1px 2px 82px;
+        /* taller hero to showcase the image */
+        margin: 2px auto 0;
+        max-width: 1770px;
+        /* add whitespace on sides */
+        position: relative;
+      }
+
+      .hero-overlay {
+        background-color: rgba(5, 13, 65, 0.7);
+        border-radius: 24px;
+        padding: 290px 41px 200px;
+        /* match hero height */
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .hero-content {
+        flex: 1;
+        text-align: right;
+        align-items: flex-start;
+        gap: 16px;
+      }
+
+      .hero-title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.2;
+        color: #ffffff;
+        letter-spacing: 1px;
+        margin-bottom: 16px;
+      }
+
+      .hero-subtitle {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+      }
+
+      .arrow-btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+
+      /* Features Bar */
+      .features-bar {
+        background-color: #324094;
+        border-radius: 8px;
+        padding: 35px 18px;
+        margin: -75px auto 0;
+        box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.08);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 10;
+        width: 86%;
+        max-width: 1300px;
+        /* narrower bar, centered */
+      }
+
+      .feature-item {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        color: #ffffff;
+        flex: 1;
+        padding: 20px;
+      }
+      /* Responsive rules for Hero and Features Bar */
+      @media (max-width: 1023px) {
+        .hero-overlay {
+          padding: 180px 24px 120px;
+          gap: 16px;
+        }
+
+        .hero-title {
+          font-size: 40px;
+        }
+
+        .arrow-btn {
+          width: 48px;
+          height: 48px;
+        }
+
+        .features-bar {
+          padding: 24px;
+          width: 92%;
+          gap: 12px;
+          flex-wrap: wrap;
+        }
+
+        .feature-item {
+          padding: 12px;
+        }
+      }
+
+      @media (max-width: 639px) {
+        .hero-overlay {
+          padding: 100px 16px 70px;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        .hero-content {
+          align-items: center;
+          text-align: center;
+        }
+
+        .hero-title {
+          font-size: 28px;
+          line-height: 1.15;
+        }
+
+        .hero-subtitle {
+          justify-content: center;
+        }
+
+        .arrow-btn {
+          width: 44px;
+          height: 44px;
+          display: none; /* hide hero arrows on small screens */
+        }
+
+        .features-bar {
+          padding: 16px;
+          flex-direction: column;
+          align-items: stretch;
+          width: 94%;
+          margin: 12px auto 0;
+        }
+
+        .feature-item {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          gap: 8px;
+          padding: 12px 8px;
+        }
+
+        .feature-divider {
+          display: none;
+        }
+
+        .feature-icon {
+          width: 48px;
+          height: 48px;
+        }
+      }
+
+      .feature-icon {
+        width: 36px;
+        height: 36px;
+      }
+
+      .feature-text h3 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 4px;
+      }
+
+      .feature-text p {
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      .feature-divider {
+        width: 1px;
+        height: 62px;
+        background-color: #ffffff;
+      }
+
+      /* About Section */
+      .about-section {
+        margin-top: 120px;
+        padding: 0 24px;
+      }
+
+      .about-content {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        flex-direction: row;
+        direction: ltr;
+        /* force layout left-to-right */
+      }
+
+      .about-image-stack {
+        position: relative;
+        width: 540px;
+        height: 430px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+        overflow: hidden;
+      }
+
+      .about-main-video {
+        width: 100%;
+        height: 100%;
+        border-radius: 18px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .about-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.56);
+        border-radius: 18px;
+        pointer-events: none;
+        /* keep video controls usable */
+      }
+
+      .about-play-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 120px;
+        height: 120px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        user-select: none;
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-user-select: none;
+      }
+
+      .about-play-btn:active {
+        transform: translate(-50%, -50%);
+      }
+      .about-text {
+        flex: 1;
+        padding-right: 12px;
+        max-width: 560px;
+        direction: rtl;
+        /* keep Arabic text direction correct */
+        text-align: right;
+      }
+
+      .about-badge {
+        background-color: #324094;
+        color: #ffffff;
+        padding: 6px 32px 6px 16px;
+        border-radius: 16px;
+        font-size: 12px;
+        font-weight: 700;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 18px;
+      }
+
+      .about-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 18px;
+      }
+
+      .about-description {
+        font-size: 12px;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.7);
+        line-height: 1.6;
+        margin-bottom: 24px;
+      }
+
+      .feature-list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      .feature-list-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+      }
+
+      .feature-list-item h4 {
+        font-size: 16px;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 8px;
+      }
+
+      .feature-list-item p {
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.7);
+      }
+
+      .check-icon {
+        width: 16px;
+        height: 16px;
+        margin-top: 2px;
+      }
+
+      /* Responsive for About Section */
+      @media (max-width: 1023px) {
+        .about-content {
+          flex-direction: column;
+          align-items: center;
+          gap: 24px;
+          direction: rtl;
+          max-width: 920px; /* limit width when stacked */
+          margin: 0 auto; /* center the column layout */
+          padding: 0 16px;
+        }
+
+        .about-image-stack {
+          width: 420px;
+          height: 340px;
+          box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-play-btn {
+          width: 96px;
+          height: 96px;
+        }
+
+        .about-text {
+          max-width: 100%;
+          padding-right: 0;
+          text-align: center;
+        }
+
+        /* Center feature list items on smaller screens */
+        .feature-list {
+          align-items: center;
+        }
+
+        .feature-list-item {
+          justify-content: center;
+          text-align: center;
+        }
+
+        .feature-list-item > div {
+          text-align: center;
+        }
+
+        .feature-list-item .check-icon {
+          margin: 0 auto;
+        }
+
+        .about-title {
+          font-size: 22px;
+        }
+
+        .about-description {
+          font-size: 14px;
+        }
+      }
+
+      @media (max-width: 639px) {
+        .about-section {
+          margin-top: 48px;
+          padding: 0 16px;
+        }
+
+        .about-content {
+          gap: 16px;
+          max-width: 520px; /* tighter max for small screens */
+          margin: 0 auto;
+          padding: 0 8px;
+        }
+
+        .about-image-stack {
+          width: 100%;
+          height: 220px;
+          box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+        }
+
+        .about-play-btn {
+          width: 72px;
+          height: 72px;
+        }
+
+        .about-title {
+          font-size: 20px;
+        }
+
+        .feature-list {
+          gap: 16px;
+        }
+
+        .feature-list-item {
+          align-items: center;
+        }
+      }
+
+      /* Scholarship Section */
+      .scholarship-section {
+        margin-top: 92px;
+        position: relative;
+      }
+
+      .scholarship-slider {
+        width: 100%;
+        height: 450px;
+        background-image: linear-gradient(
+            90deg,
+            rgba(5, 13, 65, 0.72) 0%,
+            rgba(5, 13, 65, 0.55) 30%,
+            rgba(5, 13, 65, 0.35) 60%,
+            rgba(5, 13, 65, 0) 100%
+          ),
+          url("../assets/images/trainee.jpg");
+        background-size: cover;
+        background-position: 50% 13%;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        padding: 32px 56px;
+        overflow: hidden;
+        justify-content: flex-end;
+      }
+
+      /* Center scholarship slider on small screens */
+      @media (max-width: 639px) {
+        .scholarship-slider {
+          justify-content: center;
+          padding-left: 16px;
+          padding-right: 16px;
+          background-position: center;
+        }
+
+        .scholarship-content {
+          width: 100%;
+          margin: 0;
+          text-align: center;
+        }
+      }
+
+      .scholarship-content {
+        width: 45%;
+        margin-left: 14px;
+      }
+
+      .scholarship-title {
+        font-size: 32px;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 20px;
+      }
+
+      .scholarship-description {
+        font-size: 16px;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 20px;
+      }
+
+      .cta-btn {
+        background-color: #f7941f;
+        color: #ffffff;
+        padding: 12px 24px;
+        border-radius: 25px;
+        border: none;
+        font-size: 18px;
+        font-weight: 700;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        transition: background-color 0.3s ease;
+      }
+
+      .cta-btn:hover {
+        background-color: #e6851c;
+      }
+
+      .cta-btn:hover {
+        background-color: #e8850e;
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+      }
+
+      .pagination-dots {
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+        margin-top: 32px;
+      }
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        background-color: #d9d9d9;
+      }
+
+      .dot.active {
+        background-color: #ffb606;
+      }
+
+      /* Courses Section */
+      .courses-section {
+        background-color: #eaecef;
+        padding: 56px 0 100px;
+        margin-top: 56px;
+        overflow-x: hidden;
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 26px;
+        padding: 0 20px;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      .section-header .flex-column {
+        flex: 1;
+        min-width: 200px;
+      }
+
+      .section-title {
+        font-size: 32px;
+        font-weight: 700;
+        color: #000000;
+        margin: 0;
+        margin-bottom: 10px;
+      }
+
+      .view-all-btn {
+        background-color: #f7941f;
+        color: #ffffff;
+        padding: 8px 16px;
+        border-radius: 16px;
+        border: none;
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        white-space: nowrap;
+        transition: all 0.3s ease;
+      }
+
+      .view-all-btn:hover {
+        background-color: #f5890d;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(247, 148, 31, 0.3);
+      }
+
+      .filter-tabs {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 16px;
+        flex-wrap: wrap;
+      }
+
+      .filter-tab {
+        background-color: #8797ab;
+        color: #ffffff;
+        padding: 8px 14px;
+        border-radius: 16px;
+        border: none;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .filter-tab.active {
+        background-color: #324094;
+      }
+
+      .filter-tab:hover {
+        background-color: #324094;
+        transform: translateY(-2px);
+      }
+
+      /* Responsive section header */
+      @media (max-width: 767px) {
+        .section-header {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          padding: 0 16px;
+          gap: 12px;
+        }
+
+        .section-header .flex-column {
+          width: 100%;
+        }
+
+        .section-title {
+          font-size: 24px;
+        }
+
+        .filter-tabs {
+          justify-content: center;
+          margin-bottom: 12px;
+          gap: 10px;
+        }
+
+        .filter-tab {
+          padding: 6px 12px;
+          font-size: 12px;
+        }
+
+        .view-all-btn {
+          padding: 6px 12px;
+          font-size: 12px;
+          width: 45%;
+          justify-content: center;
+        }
+      }
+
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .section-header {
+          padding: 0 16px;
+        }
+
+        .section-title {
+          font-size: 28px;
+        }
+
+        .filter-tabs {
+          gap: 12px;
+        }
+
+        .filter-tab {
+          padding: 8px 14px;
+          font-size: 13px;
+        }
+      }
+
+      /* Courses carousel */
+      .courses-carousel {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .courses-carousel .carousel-container {
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .courses-carousel .carousel {
+        display: flex;
+        transition: transform 0.5s ease;
+        gap: 22px;
+        /* Default gap, will be overridden by media queries */
+        width: fit-content;
+        will-change: transform;
+      }
+
+      .courses-carousel .slide {
+        flex: 0 0 auto;
+        box-sizing: border-box;
+        width: auto;
+        display: flex;
+        justify-content: center;
+      }
+
+      .courses-carousel .slide .course-card {
+        min-width: 350px;
+        width: 350px;
+        max-width: 100%;
+        flex-shrink: 0;
+      }
+
+      .courses-carousel .course-row {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 22px;
+        align-items: flex-start;
+        margin-top: 10px;
+      }
+
+      .courses-carousel .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(50, 64, 148, 0.85);
+        color: #fff;
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        z-index: 2;
+      }
+
+      .courses-carousel .carousel-btn.prev {
+        left: 8px;
+      }
+
+      .courses-carousel .carousel-btn.next {
+        right: 8px;
+      }
+
+      /* Subscriptions Carousel - Same styles as courses-carousel */
+      .subscriptions-carousel {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .subscriptions-carousel .carousel-container {
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .subscriptions-carousel .carousel {
+        display: flex;
+        transition: transform 0.5s ease;
+        gap: 22px;
+        width: fit-content;
+        will-change: transform;
+      }
+
+      .subscriptions-carousel .slide {
+        flex: 0 0 auto;
+        box-sizing: border-box;
+        width: auto;
+        display: flex;
+        justify-content: center;
+      }
+
+      .subscriptions-carousel .slide .course-card {
+        min-width: 350px;
+        width: 350px;
+        max-width: 100%;
+        flex-shrink: 0;
+      }
+
+      .subscriptions-carousel .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(50, 64, 148, 0.85);
+        color: #fff;
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        z-index: 2;
+      }
+
+      .subscriptions-carousel .carousel-btn.prev {
+        left: 8px;
+      }
+
+      .subscriptions-carousel .carousel-btn.next {
+        right: 8px;
+      }
+
+      /* Categories Carousel - Same styles as subscriptions-carousel */
+      .categories-carousel {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .categories-carousel .carousel-container {
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .categories-carousel .carousel {
+        display: flex;
+        transition: transform 0.5s ease;
+        gap: 22px;
+        width: fit-content;
+        will-change: transform;
+      }
+
+      .categories-carousel .slide {
+        flex: 0 0 auto;
+        box-sizing: border-box;
+        width: auto;
+        display: flex;
+        justify-content: center;
+      }
+
+      /* Ensure carousel prev/next buttons are visible outside their containers */
+      .carousel-container {
+        overflow: visible !important;
+      }
+
+      .carousel-container .carousel-btn {
+        z-index: 9999 !important;
+      }
+
+      .carousel-container .carousel-btn.prev {
+        left: -12px;
+      }
+
+      .carousel-container .carousel-btn.next {
+        right: -12px;
+      }
+
+      /* Logos carousel specific button placement (accreditations) */
+      .logos-carousel .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(32, 78, 207, 0.9);
+        color: #fff;
+        width: 44px;
+        height: 44px;
+        border-radius: 999px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        box-shadow: 0 8px 20px rgba(32,78,207,0.18);
+        z-index: 9999 !important;
+      }
+
+      .logos-carousel .carousel-btn.prev {
+        left: -22px;
+      }
+
+      .logos-carousel .carousel-btn.next {
+        right: -22px;
+      }
+
+      @media (max-width: 767px) {
+        .logos-carousel .carousel-btn {
+          width: 36px;
+          height: 36px;
+          font-size: 18px;
+        }
+
+        .logos-carousel .carousel-btn.prev {
+          left: -8px;
+        }
+
+        .logos-carousel .carousel-btn.next {
+          right: -8px;
+        }
+      }
+
+      .categories-carousel .slide .category-card {
+        position: relative;
+        width: 370px;
+        height: 250px;
+        border-radius: 5px;
+        overflow: hidden;
+        flex-shrink: 0;
+      }
+
+      .categories-carousel .category-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .categories-carousel .category-banner {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 52%;
+        height: 42px;
+        display: flex;
+        align-items: center;
+      }
+
+      .categories-carousel .category-count {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 6px 0;
+        width: 38%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .categories-carousel .category-count span {
+        font-size: 18px;
+        font-weight: 700;
+        color: #ffffff;
+        text-align: center;
+      }
+
+      .categories-carousel .category-label {
+        width: 68%;
+        height: 100%;
+        background-color: #4caf50;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 12px;
+      }
+
+      .categories-carousel .category-label span {
+        font-size: 16px;
+        font-weight: 600;
+        color: #ffffff;
+        text-align: center;
+        white-space: nowrap;
+      }
+
+      .categories-carousel .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(50, 64, 148, 0.85);
+        color: #fff;
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        z-index: 2;
+      }
+
+      .categories-carousel .carousel-btn.prev {
+        left: 8px;
+      }
+
+      .categories-carousel .carousel-btn.next {
+        right: 8px;
+      }
+
+      .course-card {
+        min-width: 350px;
+
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Ensure carousel course cards override general course-card styles */
+      .courses-carousel .course-card {
+        flex-shrink: 0;
+      }
+
+      .course-image {
+        width: 100%;
+        height: 262px;
+        object-fit: cover;
+        position: relative;
+      }
+
+      .course-price {
+        position: absolute;
+        bottom: -18px;
+        left: 12px;
+        background-color: #f7941f;
+        color: #ffffff;
+        padding: 6px 24px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 800;
+      }
+
+      .course-content {
+        padding: 30px;
+      }
+
+      .course-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 14px;
+        font-size: 15px;
+        color: #666666;
+      }
+
+      .course-title {
+        font-size: 20px;
+        font-weight: 700;
+        color: #232323;
+        margin-bottom: 14px;
+        text-align: right;
+      }
+
+      .course-description {
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.5);
+        margin-bottom: 16px;
+        text-align: right;
+        line-height: 1.6;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .course-rating {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .rating-stars {
+        display: flex;
+        gap: 4px;
+      }
+
+      .star {
+        width: 16px;
+        height: 14px;
+      }
+
+      /* Stats Section */
+      .stats-section {
+        background-color: #324094;
+        padding: 48px 24px;
+        margin-top: 100px;
+
+        /* Map as background */
+        background-image: url("../assets/images/map.png");
+        background-size: cover;
+        /* cover entire section */
+        background-position: center;
+        /* center the map */
+        background-repeat: no-repeat;
+        text-align: center;
+      }
+
+      .stats-content {
+        display: flex;
+        flex-direction: column;
+        /* stack vertically */
+        align-items: center;
+        gap: 50px;
+      }
+
+      .stats-text {
+        padding: 0;
+        z-index: 1;
+        /* in case you add overlay */
+        position: relative;
+      }
+
+      .stats-badge {
+        background-color: #f7941f;
+        color: #ffffff;
+        padding: 0 16px;
+        border-radius: 16px;
+        font-size: 20px;
+        font-weight: 700;
+        display: inline-block;
+        margin-bottom: 6px;
+      }
+
+      .stats-title {
+        font-size: 32px;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 48px;
+      }
+
+      .stats-grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+      }
+
+      .stat-item {
+        text-align: center;
+        padding: 0;
+      }
+
+      .stat-number {
+        font-size: 58px;
+        font-weight: 800;
+        color: #f8f9fa;
+        line-height: 1.4;
+      }
+
+      .stat-label {
+        font-size: 20px;
+        font-weight: 700;
+        color: #f8f9fa;
+      }
+
+      /* Team Section */
+      .team-section {
+        padding: 56px 0;
+        margin-top: 100px;
+      }
+
+      .team-title {
+        font-size: 42px;
+        font-weight: 700;
+        color: #232323;
+        text-align: right;
+        margin-bottom: 50px;
+      }
+
+      .team-title span {
+        display: block;
+      }
+
+      .team-subtitle {
+        font-size: 20px;
+        font-weight: 400;
+        color: #666666;
+      }
+
+      .team-grid {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+      }
+
+      .team-card {
+        width: 370px;
+        text-align: center;
+      }
+
+      .team-image {
+        width: 100%;
+        height: 352px;
+        border-radius: 5px;
+        object-fit: cover;
+        margin-bottom: 20px;
+      }
+
+      .team-info {
+        background-color: #ffffff;
+        padding: 20px;
+      }
+
+      .team-name {
+        font-size: 22px;
+        font-weight: 700;
+        color: #262d3d;
+        margin-bottom: 6px;
+      }
+
+      .team-role {
+        font-size: 16px;
+        color: #415674;
+      }
+
+      /* Join Section */
+      .join-section {
+        background-color: #f7f7f7;
+        border-radius: 10px;
+        padding: 0;
+        margin: 0 35px;
+        overflow: hidden;
+      }
+
+      .join-content {
+        display: flex;
+        align-items: center;
+      }
+
+      .join-image {
+        width: 48%;
+        height: 292px;
+        border-radius: 10px 0 10px 0;
+      }
+
+      .join-text {
+        flex: 1;
+        padding: 26px 14px;
+        text-align: right;
+      }
+
+      .join-title {
+        font-size: 36px;
+        font-weight: 700;
+        color: #232323;
+        margin-bottom: 26px;
+      }
+
+      .join-description {
+        font-size: 20px;
+        color: #232323;
+        margin-bottom: 26px;
+      }
+
+      /* Services Grid */
+      .services-section {
+        position: relative;
+        background-image: url("../assets/images/fitguys.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 158px 56px;
+        margin-top: 158px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .services-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(50, 64, 148, 0.85);
+        z-index: 1;
+      }
+
+      .services-section > * {
+        position: relative;
+        z-index: 2;
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .service-card {
+        background-color: #ffffff;
+        border-radius: 5px;
+        padding: 30px 10px;
+        text-align: center;
+        box-shadow: 10px 0px 60px rgba(114, 114, 114, 0.1);
+      }
+
+      .service-icon {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto 20px;
+      }
+
+      .service-title {
+        font-size: 22px;
+        font-weight: 700;
+        color: #262d3d;
+      }
+
+      .services-text {
+        width: 100%;
+        max-width: 800px;
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .services-main-title {
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-align: right;
+      }
+
+      .services-description {
+        font-size: 16px;
+        font-weight: 700;
+        text-align: right;
+      }
+
+      /* Testimonials */
+      .testimonials-section {
+        position: relative;
+        padding: 85px 0;
+        background-color: #ffffff;
+      }
+
+      .testimonials-section::before {
+        left: 0;
+      }
+
+      .testimonials-section::after {
+        right: 0;
+      }
+
+      .testimonials-section > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .testimonials-title {
+        font-size: 24px;
+        text-align: right;
+        font-weight: 700;
+        color: #232323;
+        margin-bottom: 72px;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 56px;
+      }
+
+      .testimonials-grid {
+        display: flex;
+        gap: 84px;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 56px;
+      }
+
+      .testimonial-card {
+        width: 484px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .testimonial-content {
+        position: relative;
+        padding: 0;
+        margin-bottom: 20px;
+      }
+
+      .testimonial-text {
+        font-size: 15px;
+        color: #232323;
+        line-height: 1.6;
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: sans-serif;
+      }
+
+      .testimonial-quote {
+        position: absolute;
+      top: -61px;
+        right: -61px;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        background: #0d0144;
+          transform: rotate(45deg);
+      }
+
+      .testimonial-quote img {
+        width: 40px;
+        height: 40px;
+        
+          transform: rotate(-45deg);
+      }
+
+      .testimonial-rating {
+        display: flex;
+        gap: 4px;
+        margin-bottom: 20px;
+        justify-content: center;
+      }
+
+      .testimonial-rating .star {
+        font-size: 18px;
+        color: #fbbf24;
+        line-height: 1;
+      }
+
+      .testimonial-rating .star.empty {
+        color: #d1d5db;
+      }
+
+      .testimonial-separator {
+        height: 1px;
+        background-color: #e0e0e0;
+        margin-bottom: 20px;
+      }
+
+      .testimonial-author {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        padding: 0;
+      }
+
+      .author-avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .author-name {
+        font-size: 16px;
+        font-weight: 700;
+        color: #232323;
+        margin-bottom: 4px;
+      }
+
+      .author-role {
+        font-size: 14px;
+        font-weight: 400;
+        color: #666666;
+        text-transform: uppercase;
+      }
+
+      /* CTA Sections */
+      .cta-section {
+        margin-top: 170px;
+      }
+
+      .cta-hero {
+        background-color: #324094;
+        padding: 40px 90px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        overflow: visible;
+        min-height: 320px;
+      }
+
+
+      
+      .cta-image-stack {
+        position: absolute;
+        left: 36px;
+        bottom: -10px;
+        width: 420px;
+        height: 420px;
+        flex-shrink: 0;
+        z-index: 2;
+        pointer-events: none;
+      }
+
+      .cta-bg-shape {
+        position: absolute;
+        bottom: 8px;
+        left: 40px;
+        width: 360px;
+        height: 380px;
+        background-color: #204ecf;
+        border-radius: 190px 190px 0 0;
+        z-index: 1;
+      }
+ 
+
+ 
+
+      .cta-person-image {
+        position: absolute;
+        left: 78px;
+        bottom: -2px;
+        width: auto;
+        height: 110%;
+        object-fit: contain;
+        z-index: 3;
+      }
+
+      .cta-text-content {
+        flex: 1;
+        margin-left: 120px;
+        text-align: right;
+        z-index: 4;
+        min-width: 360px;
+      }
+
+      .cta-main-title {
+        font-size: 48px;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 20px;
+        line-height: 1.05;
+      }
+
+      .cta-description {
+        font-size: 16px;
+        font-weight: 700;
+        color: #ffffff;
+        width: 60%;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 1023px) {
+        .cta-hero {
+          flex-direction: row;
+          align-items: center;
+          padding: 24px 20px;
+          min-height: auto;
+          gap: 16px;
+        }
+
+        .cta-image-stack {
+          position: relative;
+          left: 0;
+          bottom: 0;
+          width: 240px;
+          height: 280px;
+          margin: 0;
+          flex-shrink: 0;
+          z-index: 2;
+        }
+
+        .cta-bg-shape {
+          display: none;
+        }
+
+        .cta-person-image {
+          position: absolute;
+          left: -10px;
+          bottom: 0;
+          height: 100%;
+          width: auto;
+        }
+
+        .cta-text-content {
+          margin-left: 0;
+          text-align: right;
+          width: auto;
+          flex: 1;
+        }
+
+        .cta-main-title {
+          font-size: 24px;
+          margin-bottom: 12px;
+        }
+
+        .cta-description {
+          width: 100%;
+          font-size: 13px;
+          margin-bottom: 14px;
+        }
+      }
+
+      @media (max-width: 479px) {
+        .cta-hero {
+          padding: 16px 12px;
+          gap: 12px;
+        }
+
+        .cta-image-stack {
+          width: 180px;
+          height: 220px;
+        }
+
+        .cta-bg-shape {
+          left: -22px;
+          width: 170px;
+          height: 220px;
+          border-radius: 110px 110px 0 0;
+        }
+
+        .cta-person-image {
+          left: -6px;
+        }
+
+        .cta-main-title {
+          font-size: 20px;
+          margin-bottom: 8px;
+        }
+
+        .cta-description {
+          font-size: 12px;
+          margin-bottom: 10px;
+        }
+      }
+
+      /* Workout Section */
+      /* Workout Section */
+      .workout-section {
+        padding: 48px 16px;
+        background: transparent;
+        margin-top: 80px;
+      }
+
+      .workout-card {
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: #f7f7f7;
+        border-radius: 12px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        padding: 32px;
+      }
+
+      .workout-media {
+        flex: 1 1 50%;
+        min-width: 320px;
+        position: relative;
+
+        border-top-left-radius: 20px;
+
+        border-bottom-left-radius: 20px;
+      }
+
+      .workout-media .about-main-video,
+      .workout-image {
+        width: 100%;
+        height: 440px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .workout-text {
+        flex: 1 1 50%;
+        padding: 8px 24px;
+        text-align: right;
+      }
+
+      .workout-title {
+        font-size: 44px;
+        font-weight: 800;
+        color: #232323;
+        margin-bottom: 18px;
+        line-height: 1.05;
+      }
+
+      .workout-description {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.8;
+      }
+
+      /* Accreditations / Logos Carousel */
+      .accreditations-section {
+        margin-top: 56px;
+        padding: 28px 16px;
+      }
+
+      .accreditations-carousel {
+        max-width: 1200px;
+        margin: 18px auto 0;
+        position: relative;
+      }
+
+      .logos-carousel .carousel {
+        display: flex;
+        gap: 18px;
+        align-items: center;
+        will-change: transform;
+        transition: transform 0.5s ease;
+      }
+
+      .logo-slide {
+        flex: 0 0 auto;
+        width: 220px;
+        height: 120px;
+        background: #fff;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 26px 18px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+        gap: 10px;
+      }
+
+      .logo-slide img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+
+      .logo-slide .logo-caption {
+        border-radius: 10px;
+        padding: 1px 33px;
+        color: #fff;
+      }
+
+      .logos-carousel .carousel-btn {
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+      }
+
+      .logos-carousel .carousel-btn.prev {
+        left: -18px;
+      }
+      .logos-carousel .carousel-btn.next {
+        right: -18px;
+      }
+
+      @media (max-width: 639px) {
+        .logo-slide {
+          width: 160px;
+          height: 90px;
+        }
+        .logos-carousel .carousel-btn.prev {
+          left: 4px;
+        }
+        .logos-carousel .carousel-btn.next {
+          right: 4px;
+        }
+      }
+
+      @media (max-width: 1023px) {
+        .workout-card {
+          gap: 20px;
+          padding: 24px;
+        }
+
+        .workout-media .about-main-video,
+        .workout-image {
+          height: 340px;
+        }
+
+        .workout-title {
+          font-size: 34px;
+        }
+      }
+
+      @media (max-width: 639px) {
+        .workout-card {
+          flex-direction: column-reverse;
+          padding: 16px;
+        }
+
+        .workout-media .about-main-video,
+        .workout-image {
+          height: 220px;
+          border-radius: 10px;
+        }
+
+        .workout-text {
+          text-align: center;
+          padding: 12px 8px 0;
+        }
+
+        .workout-title {
+          font-size: 24px;
+        }
+      }
+
+      /* Contact Form */
+      .contact-section {
+        display: flex;
+        align-items: center;
+      }
+
+      .contact-form {
+        background-color: #324094;
+        padding: 44px 32px;
+        width: 40%;
+      }
+
+      .contact-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #ffffff;
+        text-align: right;
+        margin-bottom: 16px;
+      }
+
+      .form-group {
+        margin-bottom: 16px;
+      }
+
+      .form-input {
+        width: 100%;
+        padding: 18px 12px 14px;
+        border: 1px solid #dddddd;
+        border-radius: 12px;
+        font-size: 16px;
+        color: #bcb3b3;
+        background-color: transparent;
+      }
+
+      .form-textarea {
+        width: 100%;
+        padding: 16px 12px;
+        border: 1px solid #dddddd;
+        border-radius: 12px;
+        font-size: 16px;
+        color: #bcb3b3;
+        background-color: transparent;
+        min-height: 120px;
+        resize: vertical;
+      }
+
+      .form-submit {
+        width: 100%;
+        background-color: #f7941f;
+        color: #ffffff;
+        padding: 8px 34px;
+        border-radius: 20px;
+        border: none;
+        font-size: 20px;
+        font-weight: 700;
+        cursor: pointer;
+        margin-top: 16px;
+      }
+
+      .faq-section {
+        flex: 1;
+        padding: 0 30px;
+      }
+
+      .faq-title {
+        font-size: 48px;
+        font-weight: 700;
+        color: #232323;
+        text-align: right;
+        margin-bottom: 18px;
+      }
+
+      .faq-subtitle {
+        font-size: 20px;
+        font-weight: 700;
+        color: #232323;
+        text-align: right;
+        margin-bottom: 50px;
+      }
+
+      .faq-item {
+        background-color: #ececec;
+        border-radius: 12px;
+        padding: 5px;
+        margin-bottom: 16px;
+        cursor: pointer;
+      }
+
+      .faq-question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 700;
+        color: #000000;
+      }
+
+      .faq-answer {
+        font-size: 16px;
+        color: #666666;
+        margin-top: 10px;
+        display: none;
+      }
+
+      .faq-item.expanded .faq-answer {
+        display: block;
+      }
+
+      .faq-icon {
+        width: 24px;
+        height: 24px;
+      }
+
+      /* Blog Section */
+      .blog-section {
+        margin-top: 100px;
+        padding: 0 6px;
+      }
+
+      .blog-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #232323;
+        text-align: right;
+        margin-bottom: 56px;
+      }
+
+      /* Blog Carousel Styles */
+      .blog-carousel {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .blog-carousel .carousel-container {
+        position: relative;
+        overflow: hidden;
+        padding: 10px;
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .blog-carousel .carousel {
+        display: flex;
+        transition: transform 0.5s ease;
+        gap: 16px;
+        width: fit-content;
+        will-change: transform;
+      }
+
+      .blog-carousel .slide {
+        flex: 0 0 auto;
+        box-sizing: border-box;
+        width: auto;
+        display: flex;
+        justify-content: center;
+      }
+
+      .blog-carousel .slide .blog-card {
+        min-width: 370px;
+        width: 370px;
+        max-width: 100%;
+        flex-shrink: 0;
+      }
+
+      .blog-carousel .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(50, 64, 148, 0.85);
+        color: #fff;
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        z-index: 2;
+      }
+
+      .blog-carousel .carousel-btn.prev {
+        left: 8px;
+      }
+
+      .blog-carousel .carousel-btn.next {
+        right: 8px;
+      }
+
+      .blog-grid {
+        display: flex;
+        gap: 16px;
+        overflow-x: auto;
+      }
+
+      .blog-card {
+        min-width: 370px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .blog-image {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        position: relative;
+      }
+
+      .blog-category {
+        position: absolute;
+        bottom: -42px;
+        right: 0;
+        width: 36%;
+      }
+
+      .blog-content {
+        padding: 22px;
+        background-color: #ffffff;
+      }
+
+      .blog-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 6px;
+        font-size: 16px;
+        color: #415674;
+      }
+
+      .blog-post-title {
+        font-size: 22px;
+        font-weight: 700;
+        color: #262d3d;
+        margin-bottom: 12px;
+      }
+
+      .blog-read-more {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #324094;
+        text-decoration: underline;
+        font-size: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      /* Certificate Section */
+      .certificate-section {
+        background-color: #324094;
+        padding: 32px;
+        text-align: center;
+        margin-top: 100px;
+      }
+
+      .certificate-title {
+        font-size: 48px;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 20px;
+      }
+
+      .certificate-description {
+        font-size: 16px;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 20px;
+      }
+
+      /* Accreditations */
+      .accreditations-section {
+        margin-top: 100px;
+      }
+
+      .accreditations-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #232323;
+        text-align: right;
+        margin: 0 50px 18px 0;
+      }
+
+      .accreditations-image {
+        width: 100%;
+        height: 208px;
+        object-fit: cover;
+      }
+
+      /* Newsletter */
+      .newsletter-section {
+        background-color: #e2e2e2;
+        padding: 32px;
+        text-align: center;
+        margin-top: 100px;
+      }
+
+      .newsletter-title {
+        font-size: 48px;
+        font-weight: 700;
+        color: #232323;
+        margin-bottom: 26px;
+      }
+
+      .newsletter-description {
+        font-size: 20px;
+        color: #232323;
+        width: 42%;
+        margin: 0 auto 52px;
+      }
+
+      .newsletter-form {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        width: 48%;
+        margin: 0 auto;
+      }
+
+      .newsletter-input {
+        background-color: #ffffff;
+        border: none;
+        border-radius: 22px;
+        padding: 12px 20px;
+        font-size: 12px;
+        color: #232323;
+        flex: 1;
+      }
+
+      .newsletter-submit {
+        background-color: #f7941f;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        border-radius: 22px;
+        padding: 8px 34px;
+        font-size: 20px;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+
+      /* Footer */
+      .footer {
+        background: linear-gradient(135deg, #001f3f 0%, #0a2463 100%);
+        padding: 80px 56px 44px;
+        color: #ffffff;
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* Subtle background accent for visual interest */
+      .footer::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        right: -10%;
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(circle, rgba(247, 148, 31, 0.05) 0%, transparent 70%);
+        border-radius: 50%;
+        pointer-events: none;
+      }
+
+      .footer::after {
+        content: '';
+        position: absolute;
+        bottom: -30%;
+        left: -5%;
+        width: 500px;
+        height: 500px;
+        background: radial-gradient(circle, rgba(32, 78, 207, 0.08) 0%, transparent 70%);
+        border-radius: 50%;
+        pointer-events: none;
+      }
+
+      .footer-content {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr 1fr 1.3fr;
+        gap: 48px;
+        margin-bottom: 48px;
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        z-index: 1;
+      }
+
+      .footer-column {
+        flex: 1;
+      }
+
+      .footer-logo-column {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .footer-logo {
+        width: 140px;
+        height: auto;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+      }
+
+      .footer-logo:hover {
+        transform: scale(1.05);
+      }
+
+      .footer-column h3 {
+        font-size: 16px;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 24px;
+        text-align: right;
+        position: relative;
+        padding-right: 0;
+      }
+
+
+      .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .footer-link {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+        padding: 8px 0;
+        color: #b0b9d4;
+        gap: 12px;
+        transition: all 0.3s ease;
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      .footer-link:hover {
+        color: #f7941f;
+        padding-right: 8px;
+      }
+
+      .footer-link-icon::after {
+        content: "›";
+        font-size: 18px;
+        transition: transform 0.3s ease;
+      }
+
+      .footer-link:hover .footer-link-icon::after {
+        transform: translateX(-8px);
+      }
+
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: right;
+      }
+
+      .contact-item {
+        font-size: 14px;
+        color: #b0b9d4;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .contact-label {
+        font-weight: 700;
+        color: #ffffff;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .payment-methods {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 12px 16px;
+        background: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 12px;
+        justify-content: center;
+        margin: 12px 0;
+      }
+
+      .payment-icon {
+        width: 42px;
+        height: 28px;
+        object-fit: contain;
+        transition: transform 0.3s ease, filter 0.3s ease;
+      }
+
+      .payment-icon:hover {
+        transform: scale(1.1);
+        filter: brightness(1.2);
+      }
+
+      .social-links {
+        display: flex;
+        gap: 16px;
+        padding: 12px 0;
+        justify-content: center;
+      }
+
+      .social-icon {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        opacity: 0.8;
+      }
+
+      .social-icon:hover {
+        transform: translateY(-4px) scale(1.15);
+        opacity: 1;
+        filter: brightness(1.3);
+      }
+
+      .footer-form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+      }
+
+      .footer-form-row {
+        display: flex;
+        gap: 12px;
+        flex-direction: column;
+      }
+
+      @media (min-width: 1200px) {
+        .footer-form-row {
+          flex-direction: row;
+        }
+
+        .footer-form-row .footer-input {
+          flex: 1;
+        }
+      }
+
+      .footer-input {
+        background-color: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 50px;
+        padding: 14px 16px;
+        color: #ffffff;
+        font-size: 14px;
+        flex: 1;
+        transition: all 0.3s ease;
+        font-family: inherit;
+      }
+
+      .footer-input::placeholder {
+        color: #8fa3c0;
+      }
+
+      .footer-input:focus {
+        outline: none;
+        border-color: #f7941f;
+        background-color: rgba(255, 255, 255, 0.12);
+        box-shadow: 0 0 0 3px rgba(247, 148, 31, 0.1);
+      }
+
+      .footer-textarea {
+        background-color: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 25px;
+        padding: 14px 16px;
+        color: #ffffff;
+        font-size: 14px;
+        min-height: 100px;
+        resize: none;
+        transition: all 0.3s ease;
+        font-family: inherit;
+      }
+
+      .footer-textarea::placeholder {
+        color: #8fa3c0;
+      }
+
+      .footer-textarea:focus {
+        outline: none;
+        border-color: #f7941f;
+        background-color: rgba(255, 255, 255, 0.12);
+        box-shadow: 0 0 0 3px rgba(247, 148, 31, 0.1);
+      }
+
+      .footer-submit {
+        background: linear-gradient(135deg, #f7941f 0%, #f5890d 100%);
+        color: #ffffff;
+        border: none;
+        border-radius: 8px;
+        padding: 12px 28px;
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+        align-self: flex-end;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(247, 148, 31, 0.3);
+      }
+
+      .footer-submit:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(247, 148, 31, 0.4);
+      }
+
+      .footer-submit:active {
+        transform: translateY(-1px);
+      }
+
+      .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 24px 56px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+
+      .copyright {
+        font-size: 13px;
+        color: #8fa3c0;
+        letter-spacing: 0.3px;
+      }
+
+      .copyright .brand {
+        font-weight: 700;
+        color: #f7941f;
+        text-decoration: underline;
+      }
+
+      /* Footer responsive layout */
+      @media (max-width: 1199px) {
+        .footer-content {
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 36px;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .footer {
+          padding: 60px 24px 36px;
+        }
+
+        .footer-content {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+
+        .footer-column h3 {
+          text-align: center;
+          margin-bottom: 16px;
+        }
+
+        .footer-column h3::before {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        .footer-links {
+          gap: 12px;
+        }
+
+        .footer-link {
+          justify-content: center;
+        }
+
+        .footer-logo {
+          margin: 0 auto;
+          width: 120px;
+        }
+
+        .footer-submit {
+          align-self: center;
+        }
+
+        .contact-info {
+          text-align: center;
+        }
+
+        .payment-methods,
+        .social-links {
+          justify-content: center;
+        }
+
+        .footer-bottom {
+          padding: 20px 24px;
+        }
+      }
+
+      /* Interactive states */
+      button:hover,
+      .btn:hover {
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+      }
+
+      button:active,
+      .btn:active {
+        transform: scale(0.95);
+      }
+
+      .course-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease;
+      }
+
+      .team-card:hover .team-image {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+      }
+
+      /* Responsive media queries */
+      @media (max-width: 639px) {
+        .container {
+          padding: 0 8px;
+        }
+
+        .navbar {
+          padding: 12px 16px;
+          flex-direction: column;
+        }
+
+        .navbar-collapse {
+          justify-content: center;
+        }
+
+        .logo {
+          width: 120px;
+          height: auto;
+          margin-right: 0;
+          margin-bottom: 12px;
+        }
+
+        .nav-menu-list {
+          gap: 12px;
+          margin-top: 16px;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .nav-item {
+          font-size: 18px;
+          font-weight: 600;
+        }
+
+        .register-btn {
+          padding: 8px 16px;
+          font-size: 11px;
+          width: 100%;
+          margin-left: 0;
+          margin-top: 12px;
+        }
+
+        .hamburger {
+          display: block;
+        }
+
+        .nav-menu {
+          display: none;
+        }
+
+        .hero-title {
+          font-size: 24px;
+        }
+
+        .hero-overlay {
+          flex-direction: column;
+          padding: 80px 16px;
+        }
+
+        .features-bar {
+          flex-direction: column;
+          gap: 20px;
+          margin: -20px 16px 0;
+        }
+
+        .about-content {
+          flex-direction: column;
+        }
+
+        .about-image-stack {
+          width: 100%;
+          height: 300px;
+        }
+
+        .scholarship-title {
+          font-size: 24px;
+        }
+
+        .courses-grid {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .stats-content {
+          flex-direction: column;
+        }
+
+        .stats-grid {
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .team-grid {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .join-content {
+          flex-direction: column;
+        }
+
+        .services-grid {
+          grid-template-columns: 1fr;
+          width: 100%;
+        }
+
+        .services-section {
+          text-align: center;
+          padding: 80px 24px;
+        }
+
+        .services-text {
+          margin-bottom: 40px;
+        }
+
+        .testimonials-section {
+          padding: 50px 0;
+        }
+
+        .testimonials-title {
+          font-size: 20px;
+          margin-bottom: 40px;
+          padding: 0 16px;
+          text-align: center;
+        }
+
+        .testimonials-grid {
+          flex-direction: column;
+          gap: 30px;
+          padding: 0 16px;
+        }
+
+        .testimonial-card {
+          width: 100%;
+          padding: 24px;
+        }
+
+        .testimonial-text {
+          font-size: 14px;
+        }
+
+       
+
+        .testimonial-quote img {
+          width: 16px;
+          height: 20px;
+        }
+
+        .testimonial-rating {
+          margin-bottom: 16px;
+        }
+
+        .testimonial-rating .star {
+          font-size: 16px;
+        }
+
+        .author-avatar {
+          width: 60px;
+          height: 60px;
+        }
+
+        .author-name {
+          font-size: 14px;
+        }
+
+        .author-role {
+          font-size: 12px;
+        }
+
+        .cta-hero {
+          flex-direction: column-reverse;
+          align-items: center;
+          padding: 40px 24px;
+        }
+
+        .cta-image-stack {
+          width: 250px;
+          height: 350px;
+          margin-top: 30px;
+          margin-bottom: 0;
+        }
+
+        .cta-text-content {
+          width: 100%;
+          margin-left: 0;
+          text-align: center;
+        }
+
+        .cta-main-title {
+          font-size: 28px;
+        }
+
+        .cta-description {
+          width: 100%;
+          font-size: 14px;
+        }
+
+        .workout-content {
+          flex-direction: column;
+        }
+
+        .contact-section {
+          flex-direction: column;
+        }
+
+        .contact-form {
+          width: 100%;
+        }
+
+        .blog-grid {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .footer {
+          padding: 48px 16px 24px;
+        }
+
+        .footer-content {
+          grid-template-columns: 1fr;
+          gap: 32px;
+        }
+
+        .footer-column h3 {
+          text-align: center;
+        }
+
+        .footer-links {
+          gap: 12px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          align-items: start;
+          justify-items: center;
+        }
+
+        .footer-link {
+          font-size: 12px;
+          justify-content: center;
+          width: 100%;
+        }
+
+        .contact-info {
+          text-align: center;
+          align-items: center;
+        }
+
+        .payment-methods {
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 8px;
+          padding: 8px 0;
+        }
+
+        .social-links {
+          justify-content: center;
+        }
+
+        .footer-form {
+          width: 100%;
+        }
+
+        .footer-form-row {
+          flex-direction: column;
+        }
+
+        .footer-input,
+        .footer-textarea {
+          width: 100%;
+        }
+
+        .footer-submit {
+          align-self: center;
+          width: 100%;
+        }
+
+        .footer-logo {
+          margin: 0 auto 8px;
+          width: 120px;
+        }
+
+        .footer-column {
+          text-align: center;
+        }
+
+        .footer-bottom {
+          padding: 16px 16px;
+        }
+
+        .copyright {
+          font-size: 12px;
+        }
+      }
+
+      @media (min-width: 640px) and (max-width: 1023px) {
+        .navbar {
+          padding: 12px 24px;
+          justify-content: center;
+        }
+
+        .navbar-collapse {
+          justify-content: center;
+        }
+
+        .logo {
+          width: 130px;
+          margin-right: auto;
+        }
+
+        .nav-menu-list {
+          gap: 20px;
+          justify-content: center;
+        }
+
+        .nav-item {
+          font-size: 18px;
+          font-weight: 600;
+        }
+
+        .register-btn {
+          margin-left: 12px;
+        }
+
+        .footer {
+          padding: 64px 32px 32px;
+        }
+
+        .footer-content {
+          grid-template-columns: 1fr 1fr;
+          gap: 32px;
+        }
+
+        .footer-submit {
+          width: auto;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .navbar {
+          padding: 12px 42px;
+        }
+
+        .logo {
+          width: 144px;
+        }
+
+        .container {
+          padding: 0 24px;
+        }
+
+        .hero-title {
+          font-size: 40px;
+        }
+
+        .courses-grid {
+          flex-wrap: wrap;
+        }
+
+        .course-card {
+          width: calc(50% - 15px);
+          min-width: auto;
+        }
+
+        .team-grid {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .team-card {
+          width: calc(50% - 8px);
+        }
+
+        .cta-hero {
+          padding: 50px 40px;
+          flex-direction: row;
+        }
+
+        .cta-image-stack {
+          width: 260px;
+          height: 370px;
+          margin-top: 0;
+        }
+
+        .cta-text-content {
+          margin-left: 30px;
+          text-align: right;
+        }
+
+        .cta-main-title {
+          font-size: 36px;
+        }
+
+        .testimonials-section {
+          padding: 55px 0;
+        }
+
+        .testimonials-title {
+          font-size: 21px;
+          margin-bottom: 45px;
+          padding: 0 24px;
+        }
+
+        .testimonials-grid {
+          flex-direction: column;
+          gap: 35px;
+          padding: 0 24px;
+        }
+
+        .testimonial-card {
+          width: 100%;
+          padding: 26px;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .container {
+          padding: 0 32px;
+        }
+
+        .hero-title {
+          font-size: 50px;
+        }
+
+        .stats-grid {
+          flex-direction: row;
+        }
+
+        .services-section {
+          align-items: center;
+        }
+
+        .services-grid {
+          width: 100%;
+          max-width: 800px;
+        }
+
+        .services-text {
+          width: 100%;
+          max-width: 600px;
+        }
+
+        .cta-hero {
+          padding: 60px 48px;
+        }
+
+        .cta-image-stack {
+          width: 280px;
+          height: 400px;
+        }
+
+        .cta-text-content {
+          margin-left: 40px;
+        }
+
+        .cta-main-title {
+          font-size: 40px;
+        }
+
+        .testimonials-section {
+          padding: 60px 0;
+        }
+
+        .testimonials-title {
+          font-size: 22px;
+          margin-bottom: 50px;
+          padding: 0 32px;
+        }
+
+        .testimonials-grid {
+          flex-direction: row;
+          gap: 40px;
+          padding: 0 32px;
+        }
+
+        .testimonial-card {
+          width: calc(50% - 20px);
+          padding: 28px;
+        }
+
+        .testimonial-text {
+          font-size: 14px;
+        }
+
+        
+
+        .workout-content {
+          flex-direction: row;
+        }
+
+        .contact-section {
+          flex-direction: row;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .hamburger {
+          display: none;
+        }
+
+        .nav-menu {
+          display: flex;
+        }
+
+        .hero-title {
+          font-size: 58px;
+        }
+
+        .course-card {
+          width: calc(33.333% - 20px);
+        }
+
+        .team-card {
+          width: 370px;
+        }
+
+        .services-grid {
+          grid-template-columns: repeat(3, 1fr);
+          max-width: 1000px;
+        }
+
+        .services-text {
+          max-width: 700px;
+        }
+
+        .testimonials-section {
+          padding: 70px 0;
+        }
+
+        .testimonials-title {
+          font-size: 24px;
+          margin-bottom: 60px;
+          padding: 0 48px;
+        }
+
+        .testimonials-grid {
+          gap: 60px;
+          padding: 0 48px;
+        }
+
+        .testimonial-card {
+          width: calc(50% - 30px);
+          padding: 30px;
+        }
+
+        .cta-hero {
+          padding: 72px 80px;
+        }
+
+        .cta-image-stack {
+          width: 302px;
+          height: 426px;
+        }
+
+        .cta-text-content {
+          margin-left: 50px;
+        }
+
+        .cta-main-title {
+          font-size: 44px;
+        }
+      }
+
+      @media (min-width: 1280px) {
+        .course-card {
+          width: 350px;
+        }
+
+        .cta-hero {
+          padding: 0px 130px;
+        }
+
+        .cta-main-title {
+          font-size: 48px;
+        }
+
+        .cta-description {
+          width: 62%;
+        }
+
+        .testimonials-section {
+          padding: 85px 0;
+        }
+
+        .testimonials-title {
+          padding: 0 56px;
+        }
+
+        .testimonials-grid {
+          gap: 84px;
+          padding: 0 56px;
+        }
+
+        .testimonial-card {
+          width: 484px;
+        }
+      }
+
+      @media (max-width: 1500px) {
+        .services-section {
+          flex-direction: column;
+        }
+
+        .services-main-title {
+          text-align: center;
+        }
+
+        .services-description {
+          text-align: center;
+        }
+      }
+
+      /* Responsive carousel styles */
+      @media (max-width: 639px) {
+        .courses-carousel {
+          overflow: hidden;
+        }
+
+        .courses-carousel .carousel-container {
+          padding: 0;
+          overflow: hidden;
+        }
+
+        .courses-carousel .carousel {
+          gap: 12px !important;
+        }
+
+        .courses-carousel .slide {
+          justify-content: center;
+        }
+
+        .courses-carousel .slide .course-card {
+          min-width: calc(100vw - 48px);
+          width: calc(100vw - 48px) !important;
+          max-width: calc(100vw - 48px);
+        }
+
+        .courses-carousel .carousel-btn {
+          width: 32px;
+          height: 32px;
+          font-size: 16px;
+        }
+
+        .subscriptions-carousel {
+          overflow: hidden;
+        }
+
+        .subscriptions-carousel .carousel-container {
+          padding: 0;
+          overflow: hidden;
+        }
+
+        .subscriptions-carousel .carousel {
+          gap: 12px !important;
+        }
+
+        .subscriptions-carousel .slide {
+          justify-content: center;
+        }
+
+        .subscriptions-carousel .slide .course-card {
+          min-width: calc(100vw - 48px);
+          width: calc(100vw - 48px) !important;
+          max-width: calc(100vw - 48px);
+        }
+
+        .subscriptions-carousel .carousel-btn {
+          width: 32px;
+          height: 32px;
+          font-size: 16px;
+        }
+
+        /* Leadership Section - Mobile */
+        .leadership-section {
+          padding: 32px 16px !important;
+          margin-top: 56px !important;
+        }
+
+        .leadership-container {
+          flex-direction: column-reverse !important;
+          gap: 24px !important;
+          justify-content: center !important;
+        }
+
+        .leadership-text {
+          width: 100% !important;
+          gap: 20px !important;
+        }
+
+        .leadership-title {
+          font-size: 24px !important;
+          line-height: 1.4;
+        }
+
+        .leadership-name {
+          font-size: 14px !important;
+        }
+
+        .leadership-description {
+          font-size: 12px !important;
+        }
+
+        .leadership-image-wrapper {
+          width: 100% !important;
+          max-width: 280px;
+          margin: 0 auto;
+        }
+
+        .leadership-blue-bg {
+          border-radius: 180px 180px 0 0 !important;
+        }
+
+      }
+
+      /* Leadership Section - Desktop / Tablet adjustments */
+      @media (min-width: 640px) {
+        .leadership-section {
+          padding: 56px 48px;
+          margin-top: 100px;
+        }
+
+        .leadership-container {
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: center;
+          justify-content: space-between;
+          gap: 32px;
+        }
+
+        .leadership-text {
+          flex: 1 1 60%;
+          gap: 26px;
+          text-align: right;
+        }
+
+        .leadership-image-wrapper {
+          flex: 0 0 30%;
+          width: 30%;
+          max-width: 360px;
+          position: relative;
+          height: auto;
+          aspect-ratio: 318/447;
+        }
+
+        .leadership-blue-bg {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 86%;
+          height: 80%;
+          background-color: #204ecf;
+          border-radius: 230px 230px 0 0;
+          z-index: 1;
+        }
+
+        .leadership-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          position: relative;
+          z-index: 2;
+          border-radius: 12px;
+        }
+      }
+
+        .courses-carousel .carousel-btn.prev {
+          left: 4px;
+        }
+
+        .courses-carousel .carousel-btn.next {
+          right: 4px;
+        }
+
+        .subscriptions-carousel .carousel-btn.prev {
+          left: 4px;
+        }
+
+        .subscriptions-carousel .carousel-btn.next {
+          right: 4px;
+        }
+
+        .categories-carousel {
+          overflow: hidden;
+        }
+
+        .categories-carousel .carousel-container {
+          padding: 0;
+          overflow: hidden;
+        }
+
+        .categories-carousel .carousel {
+          gap: 12px !important;
+        }
+
+        .categories-carousel .slide {
+          justify-content: center;
+        }
+
+        .categories-carousel .slide .category-card {
+          min-width: calc(100vw - 48px);
+          width: calc(100vw - 48px) !important;
+          max-width: calc(100vw - 48px);
+        }
+
+        .categories-carousel .carousel-btn {
+          width: 32px;
+          height: 32px;
+          font-size: 16px;
+        }
+
+        .categories-carousel .carousel-btn.prev {
+          left: 4px;
+        }
+
+        .categories-carousel .carousel-btn.next {
+          right: 4px;
+        }
+
+        .course-image {
+          height: 200px;
+        }
+
+        .course-content {
+          padding: 20px;
+        }
+
+        .course-title {
+          font-size: 18px;
+        }
+
+        .course-price {
+          padding: 4px 16px;
+          font-size: 14px;
+        }
+      }
+
+      @media (min-width: 640px) and (max-width: 767px) {
+        .courses-carousel {
+          overflow: hidden;
+        }
+
+        .courses-carousel .carousel-container {
+          padding: 0 16px;
+          overflow: hidden;
+        }
+
+        .courses-carousel .carousel {
+          gap: 16px !important;
+        }
+
+        .courses-carousel .slide .course-card {
+          min-width: calc((100vw - 64px - 16px) / 2);
+          width: calc((100vw - 64px - 16px) / 2) !important;
+          max-width: calc((100vw - 64px - 16px) / 2);
+        }
+
+        .courses-carousel .carousel-btn {
+          width: 36px;
+          height: 36px;
+          font-size: 18px;
+        }
+
+        .subscriptions-carousel {
+          overflow: hidden;
+        }
+
+        .subscriptions-carousel .carousel-container {
+          padding: 0 16px;
+          overflow: hidden;
+        }
+
+        .subscriptions-carousel .carousel {
+          gap: 16px !important;
+        }
+
+        .subscriptions-carousel .slide .course-card {
+          min-width: calc((100vw - 64px - 16px) / 2);
+          width: calc((100vw - 64px - 16px) / 2) !important;
+          max-width: calc((100vw - 64px - 16px) / 2);
+        }
+
+        .subscriptions-carousel .carousel-btn {
+          width: 36px;
+          height: 36px;
+          font-size: 18px;
+        }
+
+        .categories-carousel {
+          overflow: hidden;
+        }
+
+        .categories-carousel .carousel-container {
+          padding: 0 16px;
+          overflow: hidden;
+        }
+
+        .categories-carousel .carousel {
+          gap: 16px !important;
+        }
+
+        .categories-carousel .slide .category-card {
+          min-width: calc((100vw - 64px - 16px) / 2);
+          width: calc((100vw - 64px - 16px) / 2) !important;
+          max-width: calc((100vw - 64px - 16px) / 2);
+        }
+
+        .categories-carousel .carousel-btn {
+          width: 36px;
+          height: 36px;
+          font-size: 18px;
+        }
+
+        /* Leadership Section - Small Tablet */
+        .leadership-section {
+          padding: 40px 24px !important;
+          margin-top: 70px !important;
+        }
+
+        .leadership-container {
+          gap: 28px !important;
+        }
+
+        .leadership-title {
+          font-size: 36px !important;
+          line-height: 1.3;
+        }
+
+        .leadership-image-wrapper {
+          width: 35% !important;
+          max-width: 300px;
+        }
+
+        .leadership-blue-bg {
+          border-radius: 200px 200px 0 0 !important;
+        }
+
+        .course-image {
+          height: 220px;
+        }
+
+        .course-content {
+          padding: 24px;
+        }
+      }
+
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .courses-carousel {
+          overflow: hidden;
+        }
+
+        .courses-carousel .carousel-container {
+          padding: 0 20px;
+          overflow: hidden;
+        }
+
+        .courses-carousel .carousel {
+          gap: 18px !important;
+        }
+
+        .courses-carousel .slide .course-card {
+          min-width: 320px;
+          width: 320px !important;
+          max-width: 320px;
+        }
+
+        .subscriptions-carousel {
+          overflow: hidden;
+        }
+
+        .subscriptions-carousel .carousel-container {
+          padding: 0 20px;
+          overflow: hidden;
+        }
+
+        .subscriptions-carousel .carousel {
+          gap: 18px !important;
+        }
+
+        .subscriptions-carousel .slide .course-card {
+          min-width: 320px;
+          width: 320px !important;
+          max-width: 320px;
+        }
+
+        .categories-carousel {
+          overflow: hidden;
+        }
+
+        .categories-carousel .carousel-container {
+          padding: 0 20px;
+          overflow: hidden;
+        }
+
+        .categories-carousel .carousel {
+          gap: 18px !important;
+        }
+
+        .categories-carousel .slide .category-card {
+          min-width: 320px;
+          width: 320px !important;
+          max-width: 320px;
+        }
+
+        .course-image {
+          height: 240px;
+        }
+
+        /* Leadership Section - Tablet */
+        .leadership-section {
+          padding: 48px 32px !important;
+          margin-top: 80px !important;
+        }
+
+        .leadership-container {
+          gap: 30px !important;
+        }
+
+        .leadership-title {
+          font-size: 48px !important;
+          line-height: 1.3;
+        }
+
+        .leadership-image-wrapper {
+          width: 32% !important;
+        }
+
+        .leadership-blue-bg {
+          border-radius: 215px 215px 0 0 !important;
+        }
+      }
+
+      @media (min-width: 1024px) and (max-width: 1279px) {
+        .courses-carousel {
+          overflow: hidden;
+        }
+
+        .courses-carousel .carousel-container {
+          padding: 0 24px;
+          overflow: hidden;
+        }
+
+        .courses-carousel .carousel {
+          gap: 20px !important;
+        }
+
+        .courses-carousel .slide .course-card {
+          min-width: 330px;
+          width: 330px !important;
+          max-width: 330px;
+        }
+
+        .subscriptions-carousel {
+          overflow: hidden;
+        }
+
+        .subscriptions-carousel .carousel-container {
+          padding: 0 24px;
+          overflow: hidden;
+        }
+
+        .subscriptions-carousel .carousel {
+          gap: 20px !important;
+        }
+
+        .subscriptions-carousel .slide .course-card {
+          min-width: 330px;
+          width: 330px !important;
+          max-width: 330px;
+        }
+
+        .categories-carousel {
+          overflow: hidden;
+        }
+
+        .categories-carousel .carousel-container {
+          padding: 0 24px;
+          overflow: hidden;
+        }
+
+        .categories-carousel .carousel {
+          gap: 20px !important;
+        }
+
+        .categories-carousel .slide .category-card {
+          min-width: 330px;
+          width: 330px !important;
+          max-width: 330px;
+        }
+
+        /* Leadership Section - Desktop */
+        .leadership-section {
+          padding: 56px 40px !important;
+        }
+
+        .leadership-title {
+          font-size: 54px !important;
+        }
+
+        .leadership-image-wrapper {
+          width: 30% !important;
+        }
+      }
+
+      @media (min-width: 1100px) {
+        .courses-carousel {
+          overflow: visible;
+          position: relative;
+          padding: 0 70px;
+        }
+
+        .courses-carousel .carousel-container {
+          padding: 0;
+          overflow: visible;
+        }
+
+        .courses-carousel .carousel-btn.prev {
+          left: 0;
+        }
+
+        .courses-carousel .carousel-btn.next {
+          right: 0;
+        }
+
+        .subscriptions-carousel {
+          overflow: visible;
+          position: relative;
+          padding: 0 70px;
+        }
+
+        .subscriptions-carousel .carousel-container {
+          padding: 0;
+          overflow: visible;
+        }
+
+        .subscriptions-carousel .carousel-btn.prev {
+          left: 0;
+        }
+
+        .subscriptions-carousel .carousel-btn.next {
+          right: 0;
+        }
+
+        .categories-carousel {
+          overflow: visible;
+          position: relative;
+          padding: 0 70px;
+        }
+
+        .categories-carousel .carousel-container {
+          padding: 0;
+          overflow: visible;
+        }
+
+        .categories-carousel .carousel-btn.prev {
+          left: 0;
+        }
+
+        .categories-carousel .carousel-btn.next {
+          right: 0;
+        }
+      }
+
+      @media (min-width: 1280px) {
+        .courses-carousel {
+          overflow: visible;
+        }
+
+        .courses-carousel .carousel-container {
+          padding: 0;
+          overflow: visible;
+        }
+
+        .courses-carousel .carousel {
+          gap: 22px !important;
+        }
+
+        .courses-carousel .slide .course-card {
+          min-width: 350px;
+          width: 350px !important;
+          max-width: 350px;
+        }
+
+        .courses-carousel .carousel-btn.prev {
+          left: -30%;
+        }
+
+        .courses-carousel .carousel-btn.next {
+          right: -30%;
+        }
+
+        .subscriptions-carousel {
+          overflow: visible;
+        }
+
+        .subscriptions-carousel .carousel-container {
+          padding: 0;
+          overflow: visible;
+        }
+
+        .subscriptions-carousel .carousel {
+          gap: 22px !important;
+        }
+
+        .subscriptions-carousel .slide .course-card {
+          min-width: 350px;
+          width: 350px !important;
+          max-width: 350px;
+        }
+
+        .subscriptions-carousel .carousel-btn.prev {
+          left: -30%;
+        }
+
+        .subscriptions-carousel .carousel-btn.next {
+          right: -30%;
+        }
+
+        .categories-carousel {
+          overflow: visible;
+        }
+
+        .categories-carousel .carousel-container {
+          padding: 0;
+          overflow: visible;
+        }
+
+        .categories-carousel .carousel {
+          gap: 22px !important;
+        }
+
+        .categories-carousel .slide .category-card {
+          min-width: 370px;
+          width: 370px !important;
+          max-width: 370px;
+        }
+
+        .categories-carousel .carousel-btn.prev {
+          left: -30%;
+        }
+
+        .categories-carousel .carousel-btn.next {
+          right: -30%;
+        }
+
+        /* Leadership Section - Large Desktop */
+        .leadership-section {
+          padding: 56px !important;
+        }
+
+        .leadership-title {
+          font-size: 60px !important;
+        }
+
+        .leadership-image-wrapper {
+          width: 30% !important;
+        }
+      }
+
+      .category-label {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+      }
+
+      .category-label::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.082);
+        clip-path: polygon(
+          0 50%,
+          /* triangle tip on left */ 50% 0,
+          /* top-center */ 100% 0,
+          /* top-right */ 100% 100%,
+          /* bottom-right */ 50% 100%,
+          /* bottom-center */ 0 50% /* back to tip */
+        );
+        -webkit-mask-composite: destination-out;
+        /* Safari */
+        mask-composite: subtract;
+        /* modern browsers */
+        mask-mode: alpha;
+      }
+
+      .category-count {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #66bb6a;
+        color: white;
+        margin-left: -20px;
+        /* overlaps the triangle */
+        clip-path: polygon(
+          0 0,
+          calc(100% - 20px) 0,
+          100% 50%,
+          calc(100% - 20px) 100%,
+          0 100%
+        );
+      }
+
+      /* Contact & FAQ Section Redesign */
+      .contact-section {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        /* 55/45 split - contact form wider */
+        gap: 40px;
+        padding: 80px 40px;
+        background: #ffffff;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .contact-form {
+        width: 100%;
+        background: linear-gradient(135deg, #3949ab 0%, #283593 100%);
+        padding: 50px 40px;
+        box-shadow: 0 10px 30px rgba(57, 73, 171, 0.2);
+      }
+
+      .contact-title {
+        color: #ffffff;
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        text-align: right;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-input,
+      .form-textarea {
+        width: 100%;
+        padding: 16px 20px;
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        border-radius: 8px;
+        color: #ffffff;
+        font-size: 16px;
+        font-family: "Almarai", Arial, sans-serif;
+        transition: all 0.3s ease;
+        text-align: right;
+      }
+
+      .form-input::placeholder,
+      .form-textarea::placeholder {
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      .form-input:focus,
+      .form-textarea:focus {
+        outline: none;
+        border-color: rgba(255, 255, 255, 0.8);
+        background: rgba(255, 255, 255, 0.05);
+      }
+
+      .form-textarea {
+        min-height: 120px;
+        resize: vertical;
+      }
+
+      .form-submit {
+        width: 100%;
+        padding: 16px;
+        background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+        border: none;
+        border-radius: 8px;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(255, 152, 0, 0.3);
+      }
+
+      .form-submit:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(255, 152, 0, 0.4);
+      }
+
+      .faq-section {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .faq-title {
+        font-size: 32px;
+        color: #2d3748;
+        margin-bottom: 12px;
+        font-weight: 700;
+        text-align: right;
+      }
+
+      .faq-subtitle {
+        font-size: 16px;
+        color: #718096;
+        text-align: right;
+        margin-bottom: 30px;
+        line-height: 1.6;
+      }
+
+      /* FAQ Section Styles */
+      .faq-item {
+        background: #e8e8e8;
+        border-radius: 10px;
+        margin-bottom: 12px;
+        transition: all 0.3s ease;
+        overflow: hidden;
+      }
+
+      .faq-item:last-child {
+        margin-bottom: 0;
+      }
+
+      .faq-question {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 20px 24px;
+        cursor: pointer !important;
+        background: transparent;
+        transition: all 0.3s ease;
+        user-select: none;
+      }
+
+      .faq-question:hover {
+        background: rgba(0, 0, 0, 0.03);
+      }
+
+      .faq-question span:not(.faq-icon) {
+        font-size: 16px;
+        color: #2d3748;
+        font-weight: 600;
+        flex: 1;
+        text-align: right;
+        cursor: pointer;
+      }
+
+      .faq-icon {
+        width: 28px;
+        height: 28px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: 600;
+        color: #3949ab;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        order: -1;
+        /* Place icon on the left */
+      }
+
+      .faq-item.expanded .faq-icon {
+        color: #283593;
+      }
+
+      .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+          padding 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+        opacity: 0;
+        padding: 0 24px;
+      }
+
+      .faq-item.expanded .faq-answer {
+        max-height: 500px;
+        padding: 0 24px 20px 68px;
+        opacity: 1;
+      }
+
+      .faq-answer p {
+        color: #4a5568;
+        line-height: 1.8;
+        font-size: 15px;
+        margin: 0;
+      }
+
+      /* Responsive FAQ styles */
+      @media (max-width: 1024px) {
+        .contact-section {
+          gap: 30px;
+          padding: 60px 30px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .contact-section {
+          grid-template-columns: 1fr;
+          gap: 40px;
+          padding: 50px 20px;
+        }
+
+        .contact-form {
+          padding: 40px 30px;
+        }
+
+        .contact-title {
+          font-size: 24px;
+        }
+
+        .faq-title {
+          font-size: 26px;
+        }
+
+        .faq-question span:not(.faq-icon) {
+          font-size: 15px;
+        }
+
+        .faq-item.expanded .faq-answer {
+          padding: 0 20px 16px 56px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .contact-section {
+          padding: 40px 16px;
+        }
+
+        .contact-form {
+          padding: 30px 24px;
+        }
+
+        .contact-title {
+          font-size: 22px;
+          margin-bottom: 24px;
+        }
+
+        .faq-title {
+          font-size: 24px;
+        }
+
+        .faq-question {
+          padding: 16px 20px;
+          gap: 12px;
+        }
+
+        .faq-question span:not(.faq-icon) {
+          font-size: 14px;
+        }
+
+        .faq-icon {
+          width: 24px;
+          height: 24px;
+          font-size: 20px;
+        }
+
+        .faq-item.expanded .faq-answer {
+          padding: 0 16px 14px 48px;
+        }
+      }
+    </style>
+
+    <script
+      type="module"
+      async
+      src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Ffitnessle3576back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.10"></script>
+    <script
+      type="module"
+      defer
+      src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+  </head>
+
+  <body>
+    <main class="main-content">
+      <!-- Header -->
+      <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light w-100">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#home">
+              <img
+                src="../assets/images/logo.png"
+                alt="شعار رواد اللياقة"
+                class="logo" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="تبديل التنقل">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav nav-menu-list">
+                <li class="nav-item">
+                  <a
+                    class="nav-link nav-item active"
+                    aria-current="page"
+                    href="#home">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-item" href="#categories">الفئات</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-item" href="#courses">الدورات
+                    الحالية</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-item" href="#instructors">المحاضرين</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-item" href="#leadership">ريادة</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-item" href="#blog">المدونة</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-item" href="#news">الأخبار</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-item" href="#about">من نحن</a>
+                </li>
+                <li class="nav-item d-flex align-items-center gap-3">
+                  <a class="nav-link nav-item" href="#contact">إتصل بنا</a>
+                  <img
+                    src="../assets/icons/searchicon.svg"
+                    alt="بحث"
+                    style="width: 20px; height: 20px; cursor: pointer" />
+                </li>
+              </ul>
+              <button class="register-btn d-lg-none ms-3">تسجيل</button>
+            </div>
+            <button class="register-btn d-none d-lg-block ms-3">تسجيل</button>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-overlay">
+          <button class="arrow-btn">
+            <img
+              src="../assets/icons/arrowRight.svg"
+              alt=" السابق"
+              style="width: 50px; height: 50px" />
+          </button>
+
+          <div class="hero-content flex-column align-center">
+            <h1 class="hero-title">ابدأ مسيرة مهنية جديدة<br />ابدأ اليوم</h1>
+            <div class="hero-subtitle">
+              <span>ابدأ التعلّم الآن</span>
+              <img
+                src="../assets/icons/startLearning.svg"
+                alt="ابدأ الآن"
+                style="width: 18px; height: 18px" />
+            </div>
+          </div>
+
+          <button class="arrow-btn">
+            <img
+              src="../assets/icons/arrowLeft.svg"
+              alt="التالي"
+              style="width: 50px; height: 50px" />
+          </button>
+        </div>
+      </section>
+
+      <!-- Features Bar -->
+      <section class="features-bar">
+        <div class="feature-item">
+          <img
+            src="../assets/icons/certified.svg"
+            alt="شهادة معتمدة"
+            class="feature-icon" />
+          <div class="feature-text">
+            <h3>دورات معتمدة محلياً ودولياً</h3>
+            <p>دورات معتمدة وزارة الرياضة وكبرى المؤسسات الرياضية</p>
+          </div>
+        </div>
+
+        <div class="feature-divider"></div>
+
+        <div class="feature-item">
+          <img
+            src="../assets/icons/experts.svg"
+            alt="محاضرين خبراء"
+            class="feature-icon" />
+          <div class="feature-text">
+            <h3>نخبة من المحاضرين والأكاديميين</h3>
+            <p>محاضرينا علي اعلى مستوى من الكفاءة العلمية والخبرة المهنية</p>
+          </div>
+        </div>
+
+        <div class="feature-divider"></div>
+
+        <div class="feature-item">
+          <img
+            src="../assets/icons/certified2.svg"
+            alt="اعتماد وزاري"
+            class="feature-icon" />
+          <div class="feature-text">
+            <h3>المعهد معتمد من وزارة الرياضة</h3>
+            <p>معهد رواد اللياقة معتمد من معهد إعداد القادة السعودي</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about-section">
+        <div class="container">
+          <div class="about-content">
+            <div class="flex-column align-center" style="margin-top: 22px">
+              <img
+                src="../assets/icons/whatsapp.svg"
+                alt="صورة شخصية"
+                style="width: 62px; height: 62px; border-radius: 30px" />
+            </div>
+
+            <div class="about-image-stack">
+              <img
+                src="../assets/images/trainer.jpg"
+                alt="فيديو تعليمي"
+                class="about-main-video"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  border-radius: 18px;
+                  display: block;
+                " />
+              <div class="about-overlay"></div>
+              <button
+                class="about-play-btn"
+                aria-label="تشغيل الفيديو"
+                data-bs-toggle="modal"
+                data-bs-target="#videoModal">
+                <img src="../assets/icons/play.svg" alt="تشغيل الفيديو" />
+              </button>
+            </div>
+
+            <div class="about-text">
+              <div class="about-badge">
+                <img
+                  src="../assets/icons/university.svg"
+                  alt="جامعة"
+                  style="width: 16px; height: 16px" />
+                نبذة عن جامعتنا
+              </div>
+
+              <h2 class="about-title">نبذة عن أكاديمة رواد اللياقة</h2>
+
+              <p class="about-description">
+                تأسس معهد رواد اللياقة للتدريب في ديسمبر من عام 2017 وتخصص منذ
+                تأسيسه في مجال التدريب الرياضي والإستشارات الرياضية وخاصة تدريب
+                مدربي اللياقة البدنية والتدريب الشخصي والدورات التدريبية في مجال
+              </p>
+
+              <img
+                src="../assets/icons/arrowTop.svg"
+                alt="أيقونة"
+                style="width: 50px; height: 50px; margin: 18px 0" />
+
+              <div class="feature-list">
+                <div class="feature-list-item">
+                  <img
+                    src="../assets/icons/correct.svg"
+                    alt="صح"
+                    class="check-icon" />
+                  <div>
+                    <h4>Bundle Courses</h4>
+                    <p>
+                      تأسس معهد رواد اللياقة للتدريب في ديسمبر من عام 2017 وتخصص
+                      منذ تأسيسه في مجال التدريب الرياضي والإستشارات الرياضية
+                      وخاصة تدريب مدربي اللياقة البدنية والتدريب الشخصي والدورات
+                      التدريبية في مجال
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex-row justify-between align-start">
+                  <div class="flex-column align-center" style="flex: 1">
+                    <div class="feature-list-item">
+                      <img
+                        src="../assets/icons/correct.svg"
+                        alt="صح"
+                        class="check-icon" />
+                      <div>
+                        <h4>Instructor invo...</h4>
+                        <p>
+                          Instructors are the primary facilitators in LMS co...
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="feature-list-item">
+                      <img
+                        src="../assets/icons/correct.svg"
+                        alt="صح"
+                        class="check-icon" />
+                      <div>
+                        <h4>Live Meetings</h4>
+                        <p>
+                          Live Meetings in an LMS (Learning Management Syste...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flex-column align-center" style="gap: 52px">
+                    <!-- <img src="../assets/icons/correct.svg" alt="صح" class="check-icon">
+                  <img src="../assets/icons/correct.svg" alt="صح" class="check-icon"> -->
+                  </div>
+                </div>
+
+                <div class="feature-list-item">
+                  <img
+                    src="../assets/icons/correct.svg"
+                    alt="صح"
+                    class="check-icon" />
+                  <div>
+                    <h4>Instructor Subs...</h4>
+                    <p>An Instructor Subscription in an LMS (Learning Man</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Scholarship Section -->
+      <section class="scholarship-section">
+        <div class="scholarship-slider">
+          <div class="scholarship-content">
+            <h2 class="scholarship-title">برامج المنح الدراسية</h2>
+            <p class="scholarship-description">
+              نؤمن بأن التعليم حق للجميع، لذلك نوفر منحًا دراسية تُمكِّنك من
+              تحقيق أحلامك الأكاديمية والمهنية.
+            </p>
+            <button class="cta-btn">
+              كنا مدربا
+              <img
+                src="../assets/icons/beTrainer.svg"
+                alt="سهم"
+                style="width: 12px; height: 24px" />
+            </button>
+          </div>
+        </div>
+
+        <div class="pagination-dots">
+          <div class="dot active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </section>
+
+      <!-- Courses Section -->
+      <section class="courses-section">
+        <div class="container">
+          <div class="section-header">
+            <div class="flex-column align-start" style="gap: 16px; flex: 1">
+              <h2 class="section-title">اﻟدورات اﻟﺗدرﯾﺑﯾﺔ</h2>
+              <div class="filter-tabs">
+                <button class="filter-tab">اﻟدورات اﻟﻣﺟﺎﻧﯾﺔ</button>
+                <button class="filter-tab">اﻟدورات اﻟﺣﺎﻟﯾﺔ</button>
+                <button class="filter-tab active">اﻟرﺧص اﻟﻣﮭﻧﯾﺔ</button>
+              </div>
+            </div>
+
+            <button class="view-all-btn">
+              عرض الكل
+              <img
+                src="../assets/icons/beTrainer.svg"
+                alt="سهم"
+                style="width: 12px; height: 24px" />
+            </button>
+          </div>
+
+          <div class="courses-carousel">
+            <div class="carousel-container" id="coursesCarousel">
+              <div class="carousel">
+                <!-- Slide 1 -->
+                <div class="slide">
+                  <article class="course-card">
+                    <div style="position: relative">
+                      <img
+                        src="../assets/images/slider1.jpg"
+                        alt="دورة تدريبية"
+                        class="course-image" />
+                      <div class="course-price">$15.00</div>
+                    </div>
+                    <div class="course-content">
+                      <div class="course-meta">
+                        <div class="flex-row align-center" style="gap: 4px">
+                          <span>05:02 PM</span>
+                          <img
+                            src="../assets/icons/time.svg"
+                            alt="وقت"
+                            style="width: 14px; height: 14px" />
+                        </div>
+                        <div class="flex-row align-center" style="gap: 4px">
+                          <span>Oct, 5, 2025</span>
+                          <img
+                            src="../assets/icons/calender.svg"
+                            alt="تاريخ"
+                            style="width: 16px; height: 16px" />
+                        </div>
+                      </div>
+                      <h3 class="course-title">
+                        دورة تدريبية للياقة البدنية عبر الإنترنت
+                      </h3>
+                    </div>
+                  </article>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide">
+                  <article class="course-card">
+                    <div style="position: relative">
+                      <img
+                        src="../assets/images/slider2.jpg"
+                        alt="دورة تدريبية"
+                        class="course-image" />
+                      <div class="course-price">$15.00</div>
+                    </div>
+                    <div class="course-content">
+                      <div class="course-meta">
+                        <div class="flex-row align-center" style="gap: 4px">
+                          <span>05:02 PM</span>
+                          <img
+                            src="../assets/icons/time.svg"
+                            alt="وقت"
+                            style="width: 14px; height: 14px" />
+                        </div>
+                        <div class="flex-row align-center" style="gap: 4px">
+                          <span>Oct, 5, 2025</span>
+                          <img
+                            src="../assets/icons/calender.svg"
+                            alt="تاريخ"
+                            style="width: 16px; height: 16px" />
+                        </div>
+                      </div>
+                      <h3 class="course-title">
+                        دورة تدريبية للياقة البدنية عبر الإنترنت
+                      </h3>
+                    </div>
+                  </article>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide">
+                  <article class="course-card">
+                    <div style="position: relative">
+                      <img
+                        src="../assets/images/slider3.jpg"
+                        alt="دورة تدريبية"
+                        class="course-image" />
+                      <div class="course-price">$15.00</div>
+                    </div>
+                    <div class="course-content">
+                      <div class="course-meta">
+                        <div class="flex-row align-center" style="gap: 4px">
+                          <span>05:02 PM</span>
+                          <img
+                            src="../assets/icons/time.svg"
+                            alt="وقت"
+                            style="width: 14px; height: 14px" />
+                        </div>
+                        <div class="flex-row align-center" style="gap: 4px">
+                          <span>Oct, 5, 2025</span>
+                          <img
+                            src="../assets/icons/calender.svg"
+                            alt="تاريخ"
+                            style="width: 16px; height: 16px" />
+                        </div>
+                      </div>
+                      <h3 class="course-title">
+                        دورة تدريبية للياقة البدنية عبر الإنترنت
+                      </h3>
+                    </div>
+                  </article>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="slide">
+                  <article class="course-card">
+                    <div style="position: relative">
+                      <img
+                        src="../assets/images/slider4.jpg"
+                        alt="دورة تدريبية"
+                        class="course-image" />
+                      <div class="course-price">$15.00</div>
+                    </div>
+                    <div class="course-content">
+                      <div class="course-meta">
+                        <div class="flex-row align-center" style="gap: 4px">
+                          <span>05:02 PM</span>
+                          <img
+                            src="../assets/icons/time.svg"
+                            alt="وقت"
+                            style="width: 14px; height: 14px" />
+                        </div>
+                        <div class="flex-row align-center" style="gap: 4px">
+                          <span>Oct, 5, 2025</span>
+                          <img
+                            src="../assets/icons/calender.svg"
+                            alt="تاريخ"
+                            style="width: 16px; height: 16px" />
+                        </div>
+                      </div>
+                      <h3 class="course-title">
+                        دورة تدريبية للياقة البدنية عبر الإنترنت
+                      </h3>
+                    </div>
+                  </article>
+                </div>
+              </div>
+
+              <button class="carousel-btn prev" aria-label="السابق">›</button>
+              <button class="carousel-btn next" aria-label="التالي">‹</button>
+            </div>
+          </div>
+        </div>
+        <!-- CLOSED container -->
+      </section>
+
+      <!-- Stats Section -->
+      <section class="stats-section">
+        <div class="stats-content">
+          <div class="stats-text">
+            <div class="stats-badge">أرقامنا</div>
+            <h2 class="stats-title">
+              نفخر بإنجازاتنا التي تعكس ثقة المتدربين وجودة المحتوى
+            </h2>
+
+            <div class="stats-grid">
+              <div class="stat-item">
+                <div class="stat-number">25</div>
+                <div class="stat-label">الاعتمادات</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">13,440</div>
+                <div class="stat-label">المتدربين</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">30</div>
+                <div class="stat-label">المحاضرون</div>
+              </div>
+              <div class="stat-item">
+                <div
+                  class="flex-row align-center justify-center"
+                  style="display: flex; flex-direction: row; gap: 4px">
+                  <div class="stat-number">120</div>
+                  <div class="stat-number" style="font-size: 55px">+</div>
+                </div>
+                <div class="stat-label">الدورات</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Leadership Section -->
+      <section
+        class="leadership-section"
+        style="padding: 56px; margin-top: 100px">
+        <div
+          class="leadership-container flex-row align-center"
+          style="
+            flex-wrap: wrap-reverse;
+            justify-content: flex-end;
+            gap: 32px;
+            align-items: center;
+          ">
+          <!-- Text Section -->
+          <div
+            class="leadership-text flex-column align-end"
+            style="flex: 1; gap: 26px; text-align: right">
+            <h2
+              class="leadership-title"
+              style="
+                font-size: 60px;
+                font-weight: 700;
+                color: #232323;
+                width: 100%;
+              ">
+              نفخر بكوننا أول معهد عربي يقدّم دورات متخصصة ومعتمدة في تدريب
+              وتأهيل منطقة الكور
+            </h2>
+
+            <div
+              class="leadership-info flex-column align-end"
+              style="gap: 4px; width: 100%">
+              <div
+                class="flex-row justify-start align-start"
+                style="width: 100%">
+                <h3
+                  class="leadership-name"
+                  style="font-size: 16px; font-weight: 700; color: #000000">
+                  بقيادة إيهاب أبو العلا
+                </h3>
+                <img
+                  src="../assets/icons/correct.svg"
+                  alt="صح"
+                  class="leadership-check"
+                  style="width: 16px; height: 16px; margin: 4px 0 0 8px" />
+              </div>
+              <p
+                class="leadership-description"
+                style="font-size: 14px; color: rgba(0, 0, 0, 0.7); width: 100%">
+                أول محاضر عربي معتمد في هذا المجال – منذ 2021.
+              </p>
+            </div>
+          </div>
+
+          <!-- Coach Image Section -->
+          <div
+            class="leadership-image-wrapper"
+            style="
+              position: relative;
+              width: 30%;
+              height: auto;
+              aspect-ratio: 318/447;
+              flex-shrink: 0;
+            ">
+            <div
+              class="leadership-blue-bg"
+              style="
+                position: absolute;
+                bottom: 0;
+                width: 86%;
+                height: 80%;
+                background-color: #204ecf;
+                border-radius: 230px 230px 0 0;
+              "></div>
+            <img
+              src="../assets/images/coachehab.png"
+              alt="قائد المعهد"
+              class="leadership-image"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: relative;
+                z-index: 2;
+              " />
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Section -->
+      <section class="team-section">
+        <div class="container">
+          <h2 class="team-title">
+            <span style="font-size: 32px">فريقنا التدريبي</span>
+            <span style="font-size: 20px; font-weight: 400; color: #666666">
+              تعلم من الأفضل</span>
+          </h2>
+
+          <div class="team-grid">
+            <article class="team-card">
+              <img
+                src="../assets/images/coah1.jpg"
+                alt="إيهاب أبو العلا"
+                class="team-image" />
+              <div class="team-info">
+                <h3 class="team-name">إيهاب أبو العلا</h3>
+                <p class="team-role">
+                  خبير تدريب وتأهيل منطقة الكور، ومحاضر معتمد منذ عام 2021.
+                </p>
+              </div>
+            </article>
+
+            <article class="team-card">
+              <img
+                src="../assets/images/coach2.jpg"
+                alt="م. أحمد عبد الحميد"
+                class="team-image" />
+              <div class="team-info">
+                <h3 class="team-name">م. أحمد عبد الحميد</h3>
+                <p class="team-role">
+                  مدرب معتمد في تطوير الأداء البدني والتقنيات الحديثة في
+                  التدريب.
+                </p>
+              </div>
+            </article>
+
+            <article class="team-card">
+              <img
+                src="../assets/images/coach3.jpg"
+                alt="إيهاب أبو العلا"
+                class="team-image" />
+              <div class="team-info">
+                <h3 class="team-name">إيهاب أبو العلا</h3>
+                <p class="team-role">
+                  خبير تدريب وتأهيل منطقة الكور، ومحاضر معتمد منذ عام 2021.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Join Section -->
+      <section class="join-section">
+        <div
+          class="join-content"
+          style="display: flex; flex-wrap: wrap; align-items: center; gap: 24px">
+          <!-- Text first -->
+          <div class="join-text" style="flex: 1; text-align: right">
+            <h2 class="join-title">انضم إلينا كمحاضر</h2>
+            <p class="join-description">
+              شارك خبراتك الأكاديمية والميدانية مع آلاف المتعلمين، وكن جزءًا من
+              معهد تعليمي يُقدّر المحتوى الاحترافي ويدعم المحاضرين
+            </p>
+            <button class="cta-btn">
+              انضم إلينا الآن
+              <img
+                src="../assets/icons/beTrainer.svg"
+                alt="سهم"
+                style="width: 12px; height: 24px" />
+            </button>
+          </div>
+
+          <!-- Image second -->
+          <img
+            src="../assets/images/boxRing.jpg"
+            alt="انضم إلينا"
+            class="join-image"
+            style="flex: 1; max-width: 100%; height: auto" />
+        </div>
+      </section>
+
+      <!-- More Courses Section -->
+      <section class="more-courses" style="margin-top: 100px">
+        <div class="container">
+          <div class="section-header">
+            <div class="flex-column align-start" style="gap: 16px; flex: 1">
+              <h2 class="section-title">اﻟدورات اﻟﺗدرﯾﺑﯾﺔ</h2>
+              <div class="filter-tabs">
+                <button class="filter-tab">اﻟدورات اﻟﻣﺟﺎﻧﯾﺔ</button>
+                <button class="filter-tab">اﻟدورات اﻟﺣﺎﻟﯾﺔ</button>
+                <button class="filter-tab active">اﻟرﺧص اﻟﻣﮭﻧﯾﺔ</button>
+              </div>
+            </div>
+
+            <button class="view-all-btn">
+              عرض الكل
+              <img
+                src="../assets/icons/beTrainer.svg"
+                alt="سهم"
+                style="width: 12px; height: 24px" />
+            </button>
+          </div>
+
+          <div class="courses-carousel">
+            <div class="carousel-container" id="moreCoursesCarousel">
+              <div class="carousel">
+                <!-- Slides will be dynamically generated by JavaScript -->
+              </div>
+
+              <button class="carousel-btn prev" aria-label="السابق">›</button>
+              <button class="carousel-btn next" aria-label="التالي">‹</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Subscription Packages -->
+      <section class="subscriptions-section" style="margin-top: 100px">
+        <div class="container">
+          <div
+            class="section-header"
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              gap: 16px;
+            ">
+            <div class="flex-column align-start" style="gap: 16px; flex: 1">
+              <h2 class="section-title">باقات الاشتراك</h2>
+            </div>
+
+            <button class="view-all-btn">
+              عرض الكل
+              <img
+                src="../assets/icons/beTrainer.svg"
+                alt="سهم"
+                style="width: 12px; height: 24px" />
+            </button>
+          </div>
+
+          <div class="subscriptions-carousel">
+            <div class="carousel-container" id="subscriptionsCarousel">
+              <div class="carousel">
+                <!-- Subscription slides/cards will be dynamically generated -->
+              </div>
+
+              <button class="carousel-btn prev" aria-label="السابق">›</button>
+              <button class="carousel-btn next" aria-label="التالي">‹</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Course Categories -->
+      <section style="margin-top: 102px">
+        <div class="container">
+          <h2
+            style="
+              font-size: 24px;
+              font-weight: 700;
+              color: #000000;
+              text-align: right;
+              margin: 0 66px 50px 0;
+            ">
+            اقسام الدورات
+          </h2>
+
+          <div class="categories-carousel">
+            <div class="carousel-container" id="categoriesCarousel">
+              <div class="carousel">
+                <!-- Category slides/cards will be dynamically generated -->
+              </div>
+
+              <button class="carousel-btn prev" aria-label="السابق">›</button>
+              <button class="carousel-btn next" aria-label="التالي">‹</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="services-section">
+        <div class="services-text">
+          <h2 class="services-main-title">لماذا تختار رواد اللياقة</h2>
+          <p class="services-description">
+            نقدّم لك تجربة دعم متكاملة تشمل الخصوصية، التواصل السريع، والمساعدة
+            الفنية على مدار الساعة — لأن راحتك أولويتنا.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <img
+              src="../assets/icons/phone-out_svgrepo.com.svg"
+              alt="اتصل بنا"
+              class="service-icon" />
+            <h3 class="service-title">اتصل بنا</h3>
+          </div>
+
+          <div class="service-card">
+            <img
+              src="../assets/icons/cogs_svgrepo.com.svg"
+              alt="تطوير المنتجات"
+              class="service-icon" />
+            <h3 class="service-title">تطوير المنتجات</h3>
+          </div>
+          <div class="service-card">
+            <img
+              src="../assets/icons/headset_svgrepo.com.svg"
+              alt="الدعم"
+              class="service-icon" />
+            <h3 class="service-title">الدعم</h3>
+          </div>
+
+          <div class="service-card">
+            <img
+              src="../assets/icons/question_svgrepo.com.svg"
+              alt="تطوير المنتجات"
+              class="service-icon" />
+            <h3 class="service-title">المساعدة والدعم</h3>
+          </div>
+
+          <div class="service-card">
+            <img
+              src="../assets/icons/clock-alt-2_svgrepo.com.svg"
+              alt="24/7 متاح دائماً"
+              class="service-icon" />
+            <h3 class="service-title">24 * 7 (متاح دائمًا)</h3>
+          </div>
+          <div class="service-card">
+            <img src="../assets/icons/lock_svgrepo.com.svg" alt="الخصوصية" />
+
+            <h3 class="service-title">الخصوصية</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="testimonials-section">
+        <h2 class="testimonials-title">آراء عملائنا تعكس نجاحنا</h2>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <div class="testimonial-content">
+              <p class="testimonial-text">
+                Objection estimable discourse procuring he he remaining on<br />
+                distrusts. Simplicity affronting inquietude for now
+                sympathize<br />
+                age. She meant new their could defer child.
+              </p>
+              <div class="testimonial-quote">
+                <img
+                  src="../assets/icons/quote.svg"
+                  alt="اقتباس"
+                  style="width: 20px; height: 24px" />
+              </div>
+            </div>
+
+            <div class="testimonial-rating">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star empty">☆</span>
+            </div>
+
+            <div class="testimonial-separator"></div>
+
+            <div class="testimonial-author">
+              <img
+                src="../assets/images/avatar.jpg"
+                alt="Busel park"
+                class="author-avatar" />
+              <div>
+                <div class="author-name">Busel Park</div>
+                <div class="author-role">STUDENT</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-content">
+              <p class="testimonial-text">
+                Objection estimable discourse procuring he he remaining on<br />
+                distrusts. Simplicity affronting inquietude for now
+                sympathize<br />
+                age. She meant new their could defer child.
+              </p>
+              <div class="testimonial-quote">
+                <img
+                  src="../assets/icons/quote.svg"
+                  alt="اقتباس"
+                  style="width: 20px; height: 24px" />
+              </div>
+            </div>
+
+            <div class="testimonial-rating">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star empty">☆</span>
+            </div>
+
+            <div class="testimonial-separator"></div>
+
+            <div class="testimonial-author">
+              <img
+                src="../assets/images/avatar.jpg"
+                alt="Jnoes Sari"
+                class="author-avatar" />
+              <div>
+                <div class="author-name">Jnoes Sari</div>
+                <div class="author-role">PROGRAMMER</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section">
+        <div class="cta-hero">
+          <div class="cta-text-content">
+            <h2 class="cta-main-title">برامج المنح الدراسية</h2>
+            <p class="cta-description">
+              نؤمن بأن التعليم حق للجميع، لذلك نوفر منحًا دراسية تُمكِّنك من
+              تحقيق أحلامك الأكاديمية والمهنية.
+            </p>
+            <button class="cta-btn">إقرأ المزيد »</button>
+          </div>
+          <div class="cta-image-stack">
+            <div class="cta-bg-shape"></div>
+            <img
+              src="../assets/images/coachehab.png"
+              alt="ابدأ التمرين"
+              class="cta-person-image" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Workout Section -->
+      <section class="workout-section">
+        <div class="workout-card">
+          <div class="workout-text">
+            <h2 class="workout-title">ابدأ التمرين من أي مكان، وفي أي وقت</h2>
+            <p class="workout-description">
+              اللياقة اليوم ما تحتاج نادي ولا معدات معقدة، تحتاج فقط مدرب محترف
+              يرشدك بخطة صحيحة تناسب هدفك وجسمك. مع دوراتنا التدريبية عبر
+              الإنترنت، احصل على تجربة تدريب متكاملة لتحسين صحتك ولياقتك من راحة
+              منزلك.
+            </p>
+          </div>
+          <div class="workout-media about-image-stack">
+            <img
+              src="../assets/images/footballcoach.jpg"
+              alt="ابدأ التمرين"
+              class="about-main-video" />
+            <div class="about-overlay"></div>
+            <button
+              class="about-play-btn"
+              aria-label="تشغيل فيديو التمرين"
+              data-bs-toggle="modal"
+              data-bs-target="#workoutModal">
+              <img src="../assets/icons/play.svg" alt="تشغيل الفيديو" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact & FAQ Section -->
+      <section class="contact-section">
+        <div class="faq-section">
+          <h2 class="faq-title">احصل على كل إجابة هنا.</h2>
+          <p class="faq-subtitle">
+            شركة أو منظمة تم إنشاؤها لتقديم خدمة معينة، وعادةً ما تتضمن هذه
+            الخدمة معاملات تنظيمية.
+          </p>
+
+          <div class="faq-item expanded">
+            <div class="faq-question">
+              <span class="faq-icon">−</span>
+              <span>تنزيل الدورات</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-icon">+</span>
+              <span>كيف يمكنني التسجيل في الدورات؟</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                يمكنك التسجيل في الدورات من خلال الضغط على زر التسجيل واتباع
+                الخطوات البسيطة. ستحتاج إلى إنشاء حساب وإدخال المعلومات المطلوبة
+                لإتمام عملية التسجيل بنجاح.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-icon">+</span>
+              <span>هل الشهادات معتمدة؟</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                نعم، جميع الشهادات الصادرة عن منصتنا معتمدة ومعترف بها من قبل
+                الجهات المختصة. يمكنك استخدامها لتعزيز سيرتك الذاتية والتقدم في
+                مسيرتك المهنية.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-icon">+</span>
+              <span>ما هي مدة الدورات التدريبية؟</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                تتراوح مدة الدورات من أسبوعين إلى ستة أشهر حسب نوع الدورة
+                والمحتوى المقدم. كل دورة لها مدة محددة يمكنك الاطلاع عليها في
+                صفحة تفاصيل الدورة.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-icon">+</span>
+              <span>هل يمكنني الحصول على استرداد الأموال؟</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                نعم، نوفر سياسة استرداد الأموال خلال أول 14 يومًا من تاريخ
+                الشراء إذا لم تكن راضيًا عن الدورة. يرجى مراجعة شروط وأحكام
+                الاسترداد للحصول على مزيد من التفاصيل.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h2 class="contact-title">قم بإجراء اتصال</h2>
+          <form>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-input"
+                placeholder="الإسم"
+                required />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-input"
+                placeholder="البريد الإلكتروني"
+                required />
+            </div>
+            <div class="form-group">
+              <input
+                type="tel"
+                class="form-input"
+                placeholder="رقم الهاتف"
+                required />
+            </div>
+            <div class="form-group">
+              <textarea
+                class="form-textarea"
+                placeholder="الملاحظات"></textarea>
+            </div>
+            <button type="submit" class="form-submit">إرسل الآن</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Blog Section -->
+      <section class="blog-section">
+        <h2 class="blog-title">أحدث المدونات والأخبار</h2>
+
+        <div class="blog-carousel">
+          <div class="carousel-container" id="blogCarousel">
+            <div class="carousel">
+              <!-- Blog slides will be dynamically generated by JavaScript -->
+            </div>
+
+            <button class="carousel-btn prev" aria-label="السابق">›</button>
+            <button class="carousel-btn next" aria-label="التالي">‹</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certificate Section -->
+      <section class="certificate-section">
+        <h2 class="certificate-title">تحقق من الشهادة</h2>
+        <p class="certificate-description">
+          نؤمن بأن التعليم حق للجميع، لذلك نوفر منحًا دراسية تُمكِّنك من تحقيق
+          أحلامك الأكاديمية والمهنية.
+        </p>
+        <button class="cta-btn">
+          تحقق
+          <img
+            src="../assets/icons/beTrainer.svg"
+            alt="سهم"
+            style="width: 12px; height: 24px" />
+        </button>
+      </section>
+
+      <!-- Accreditations Section -->
+      <section class="accreditations-section">
+        <h2 class="accreditations-title">
+          الإعتمادات الرسمية والشراكات الدولية
+        </h2>
+        <div class="accreditations-carousel">
+          <div class="logos-carousel carousel-container" id="logosCarousel">
+            <div class="carousel">
+              <!-- logo slides will be generated by JS -->
+            </div>
+
+            <button class="carousel-btn prev" aria-label="السابق">›</button>
+            <button class="carousel-btn next" aria-label="التالي">‹</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Video Modal (Bootstrap) -->
+      <div
+        class="modal fade"
+        id="videoModal"
+        tabindex="-1"
+        aria-labelledby="videoModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div
+            class="modal-content"
+            style="background-color: #000000; border: none">
+            <div class="modal-header" style="border-bottom: none">
+              <h5
+                class="modal-title"
+                id="videoModalLabel"
+                style="color: #ffffff">
+                فيديو تعليمي
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+                aria-label="إغلاق"></button>
+            </div>
+            <div class="modal-body" style="padding: 0">
+              <video
+                id="modalVideo"
+                width="100%"
+                height="auto"
+                style="max-height: 600px; object-fit: contain"
+                controls
+                autoplay>
+                <source src="../assets/videos/about.mp4" type="video/mp4" />
+                متصفحك لا يدعم تشغيل الفيديو.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Workout Video Modal (Bootstrap) -->
+      <div
+        class="modal fade"
+        id="workoutModal"
+        tabindex="-1"
+        aria-labelledby="workoutModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div
+            class="modal-content"
+            style="background-color: #000000; border: none">
+            <div class="modal-header" style="border-bottom: none">
+              <h5
+                class="modal-title"
+                id="workoutModalLabel"
+                style="color: #ffffff">
+                فيديو التمرين
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+                aria-label="إغلاق"></button>
+            </div>
+            <div class="modal-body" style="padding: 0">
+              <video
+                id="modalWorkoutVideo"
+                width="100%"
+                height="auto"
+                style="max-height: 600px; object-fit: contain"
+                controls
+                autoplay>
+                <source src="../assets/videos/workout.mp4" type="video/mp4" />
+                متصفحك لا يدعم تشغيل الفيديو.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        // Pause and reset modal videos when their modal is hidden
+        (function () {
+          const pauseOnHide = (modalId, videoId) => {
+            const modalEl = document.getElementById(modalId);
+            const videoEl = document.getElementById(videoId);
+            if (!modalEl || !videoEl) return;
+            modalEl.addEventListener("hidden.bs.modal", function () {
+              try {
+                videoEl.pause();
+                videoEl.currentTime = 0;
+              } catch (e) {
+                // ignore
+              }
+            });
+          };
+
+          pauseOnHide("videoModal", "modalVideo");
+          pauseOnHide("workoutModal", "modalWorkoutVideo");
+        })();
+      </script>
+
+      <!-- Newsletter Section -->
+      <section class="newsletter-section">
+        <h2 class="newsletter-title">إشترك معنا الان</h2>
+        <p class="newsletter-description">
+          اشترك لتصلك نشرتنا الأسبوعية التي تضم مواد تعليمية، دورات جديدة، أكثر
+          المنشورات شعبية، كتبًا رائجة، والمزيد!
+        </p>
+        <div class="newsletter-form">
+          <input
+            type="email"
+            class="newsletter-input"
+            placeholder="أدخل بريدك الإلكتروني هنا" />
+          <button class="newsletter-submit">إشترك</button>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-column footer-logo-column">
+          <img
+            src="../assets/images/logo.png"
+            alt="شعار رواد اللياقة"
+            class="footer-logo" />
+          <h3>هل لديك سؤال؟</h3>
+          <div class="footer-form">
+            <div class="footer-form-row">
+              <input type="text" class="footer-input" placeholder="الاسم" />
+              <input
+                type="email"
+                class="footer-input"
+                placeholder="البريد الإلكتروني" />
+            </div>
+            <textarea
+              class="footer-textarea"
+              placeholder="اكتب استفسارك هنا"></textarea>
+            <button class="footer-submit">إرسال</button>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>روابط سريعة</h3>
+          <div class="footer-links">
+            <a href="#" class="footer-link">الرئيسية <span
+                class="footer-link-icon"></span></a>
+            <a href="#" class="footer-link">من نحن <span
+                class="footer-link-icon"></span></a>
+            <a href="#" class="footer-link">الدورات الحالية <span
+                class="footer-link-icon"></span></a>
+            <a href="#" class="footer-link">الدورات <span
+                class="footer-link-icon"></span></a>
+            <a href="#" class="footer-link">المدونة <span
+                class="footer-link-icon"></span></a>
+            <a href="#" class="footer-link">إتصل بنا <span
+                class="footer-link-icon"></span></a>
+            <a href="#" class="footer-link">حسابي <span
+                class="footer-link-icon"></span></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>روابط مهمة</h3>
+          <div class="footer-links">
+            <a href="#" class="footer-link">الشروط والأحكام <span
+                class="footer-link-icon"></span></a>
+            <a href="#" class="footer-link">سياسة الإلغاء والاسترجاع <span
+                class="footer-link-icon"></span></a>
+            <a href="#" class="footer-link">سياسة الخصوصية <span
+                class="footer-link-icon"></span></a>
+            <a href="#" class="footer-link">سياسة الاستخدام <span
+                class="footer-link-icon"></span></a>
+            <a href="#" class="footer-link">التحقق من الشهادة <span
+                class="footer-link-icon"></span></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <div class="contact-info">
+            <h3>معلومات الاتصال</h3>
+            <div class="contact-item">
+              <span class="contact-label">البريد الإلكتروني</span>
+              <span>support@validtheme.com</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">تواصل معنا</span>
+              <span>+44-20-7328-4499</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">وسائل الدفع</span>
+            </div>
+
+            <div class="payment-methods">
+              <img
+                src="../assets/icons/MasterCard.svg"
+                alt="ماستركارد"
+                class="payment-icon" />
+              <img
+                src="../assets/icons/Visa.svg"
+                alt="فيزا"
+                class="payment-icon" />
+              <img
+                src="../assets/icons/PayPal.svg"
+                alt="باي بال"
+                class="payment-icon" />
+              <img
+                src="../assets/icons/mada.svg"
+                alt="مدا"
+                class="payment-icon" />
+            </div>
+
+            <div class="social-links">
+              <img
+                src="../assets/icons/face.svg"
+                alt="فيسبوك"
+                class="social-icon" />
+              <img
+                src="../assets/icons/ex.svg"
+                alt="تويتر"
+                class="social-icon" />
+              <img
+                src="../assets/icons/instagram.svg"
+                alt="إنستغرام"
+                class="social-icon" />
+              <img
+                src="../assets/icons/linked.svg"
+                alt="لينكد إن"
+                class="social-icon" />
+              <img
+                src="../assets/icons/yt.svg"
+                alt="يوتيوب"
+                class="social-icon" />
+              <img
+                src="../assets/icons/wa.svg"
+                alt="واتس آب"
+                class="social-icon" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="copyright">
+          © حقوق الطبع والنشر 2025. جميع الحقوق محفوظة لـ
+          <span class="brand">رواد اللياقة</span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle handled by Bootstrap
+      // No need for custom hamburger menu functionality
+
+      // Filter tabs functionality
+      document.querySelectorAll(".filter-tab").forEach((tab) => {
+        tab.addEventListener("click", function () {
+          // Remove active class from all tabs in the same container
+          const container = this.closest(".filter-tabs");
+          container
+            .querySelectorAll(".filter-tab")
+            .forEach((t) => t.classList.remove("active"));
+
+          // Add active class to clicked tab
+          this.classList.add("active");
+        });
+      });
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Form submission handling
+      document.querySelectorAll("form").forEach((form) => {
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Basic form validation
+          const inputs = this.querySelectorAll(
+            "input[required], textarea[required]"
+          );
+          let isValid = true;
+
+          inputs.forEach((input) => {
+            if (!input.value.trim()) {
+              isValid = false;
+              input.style.borderColor = "#ff0000";
+            } else {
+              input.style.borderColor = "#dddddd";
+            }
+          });
+
+          if (isValid) {
+            alert("تم إرسال النموذج بنجاح!");
+            this.reset();
+          } else {
+            alert("يرجى ملء جميع الحقول المطلوبة");
+          }
+        });
+      });
+
+      // Newsletter form handling
+      document
+        .querySelector(".newsletter-form")
+        ?.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const email = this.querySelector('input[type="email"]').value;
+          if (email) {
+            alert("تم الاشتراك بنجاح!");
+            this.reset();
+          }
+        });
+
+      // Intersection Observer for animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, observerOptions);
+
+      // Observe elements for animation
+      document
+        .querySelectorAll(
+          ".course-card, .team-card, .service-card, .testimonial-card, .blog-card"
+        )
+        .forEach((el) => {
+          el.style.opacity = "0";
+          el.style.transform = "translateY(20px)";
+          el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+          observer.observe(el);
+        });
+
+      // Counter animation for stats
+      function animateCounter(element, target) {
+        let current = 0;
+        const increment = target / 100;
+        const timer = setInterval(() => {
+          current += increment;
+          if (current >= target) {
+            current = target;
+            clearInterval(timer);
+          }
+          element.textContent = Math.floor(current).toLocaleString();
+        }, 20);
+      }
+
+      // Trigger counter animation when stats section is visible
+      const statsObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const counters = entry.target.querySelectorAll(".stat-number");
+              counters.forEach((counter) => {
+                const target = parseInt(
+                  counter.textContent.replace(/[^\d]/g, "")
+                );
+                // Only animate if target is a valid number
+                if (!isNaN(target) && target > 0) {
+                  animateCounter(counter, target);
+                }
+              });
+              statsObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+
+      const statsSection = document.querySelector(".stats-section");
+      if (statsSection) {
+        statsObserver.observe(statsSection);
+      }
+
+      // Blog posts data
+      const blogPosts = [
+        {
+          title: "دورة تدريبية للياقة البدنية عبر الإنترنت",
+          image: "../assets/images/teenages.jpg",
+          author: "بواسطة احمد",
+          comments: "التعليقات (5)",
+          date: "March 15",
+        },
+        {
+          title: "دورة تدريبية للياقة البدنية عبر الإنترنت",
+          image: "../assets/images/teenages.jpg",
+          author: "بواسطة احمد",
+          comments: "التعليقات (5)",
+          date: "March 12",
+        },
+        {
+          title: "دورة تدريبية للياقة البدنية عبر الإنترنت",
+          image: "../assets/images/teenages.jpg",
+          author: "بواسطة احمد",
+          comments: "التعليقات (5)",
+          date: "March 10",
+        },
+        {
+          title: "دورة تدريبية للياقة البدنية عبر الإنترنت",
+          image: "../assets/images/teenages.jpg",
+          author: "بواسطة احمد",
+          comments: "التعليقات (5)",
+          date: "March 8",
+        },
+        {
+          title: "دورة تدريبية للياقة البدنية عبر الإنترنت",
+          image: "../assets/images/teenages.jpg",
+          author: "بواسطة احمد",
+          comments: "التعليقات (5)",
+          date: "March 5",
+        },
+      ];
+
+      // Blog Carousel Initialization
+      document.addEventListener("DOMContentLoaded", function () {
+        const blogCarousel = document.querySelector(".blog-carousel .carousel");
+
+        if (!blogCarousel) return;
+
+        // Clear existing slides (if any)
+        blogCarousel.innerHTML = "";
+
+        // Loop over blogPosts array
+        blogPosts.forEach((post) => {
+          const slide = document.createElement("div");
+          slide.classList.add("slide");
+          slide.innerHTML = `
+          <article class="blog-card">
+            <div style="position: relative">
+              <img src="${post.image}" alt="${post.title}"
+                style="width: 100%; height: 250px; border-radius: 5px; object-fit: cover;" />
+              <img src="../assets/images/img_mask_group_black_900_42x130.png" alt="قناع" class="blog-category" />
+              <div style="position: absolute; bottom: 12px; right: 12px; background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%); color: white; padding: 8px 16px; border-radius: 4px; font-weight: 600; font-size: 14px;">
+                ${post.date}
+              </div>
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta"> 
+                <div class="flex-row align-center" style="gap: 8px">
+                  <span style="font-size: 13px; color: #666;">${post.author}</span>
+                  <img src="../assets/images/img_margin.svg" alt="كاتب" style="width: 18px; height: 16px" />
+                </div>
+                <div class="flex-row align-center" style="gap: 8px">
+                  <span style="font-size: 13px; color: #666;">${post.comments}</span>
+                  <img src="../assets/images/img_margin_blue_gray_700.svg" alt="تعليقات"
+                    style="width: 22px; height: 16px" />
+                </div>
+              </div>
+              <h3 class="blog-post-title" style="margin: 12px 0; font-size: 16px; font-weight: 700; color: #232323; line-height: 1.4;">
+                ${post.title}
+              </h3>
+              <a href="#" class="blog-read-more" style="display: inline-flex; align-items: center; gap: 8px; color: #204ecf; text-decoration: none; font-weight: 600; font-size: 14px;">
+                قراءة المزيد
+                <img src="../assets/icons/blueArrow.svg" alt="سهم" style="width: 22px; height: 12px" />
+              </a>
+            </div>
+          </article>
+        `;
+          blogCarousel.appendChild(slide);
+        });
+
+        // Wait for slides to be rendered and images loaded before calculating dimensions
+        let currentIndex = 0;
+        let maxIndex = 0;
+        let slideWidth = 0;
+        let slides = [];
+        let carouselContainer = null;
+
+        const getGap = () => {
+          // Read gap from computed CSS style to match responsive breakpoints
+          const carouselElement = document.querySelector(
+            ".blog-carousel .carousel"
+          );
+          if (carouselElement) {
+            const computedStyle = window.getComputedStyle(carouselElement);
+            const gap = computedStyle.gap || computedStyle.columnGap;
+            // Parse gap value (could be "16px" or "1rem" etc.)
+            const gapValue = parseFloat(gap);
+            return isNaN(gapValue) ? 16 : gapValue;
+          }
+          return 16;
+        };
+
+        const calculateCarousel = () => {
+          if (!slides.length || !carouselContainer || !slides[0]) return;
+
+          const gap = getGap();
+          // Get actual rendered width of the slide (including card)
+          const slideElement = slides[0];
+          const cardElement = slideElement.querySelector(".blog-card");
+          const actualSlideWidth = cardElement
+            ? cardElement.offsetWidth
+            : slideElement.offsetWidth;
+          slideWidth = actualSlideWidth + gap;
+
+          const containerWidth = carouselContainer.offsetWidth;
+          const visibleSlides = Math.max(
+            1,
+            Math.floor(containerWidth / slideWidth)
+          );
+
+          // Calculate max index - allow scrolling to show all slides
+          maxIndex = Math.max(0, slides.length - visibleSlides);
+
+          // Ensure currentIndex doesn't exceed maxIndex
+          if (currentIndex > maxIndex) {
+            currentIndex = maxIndex;
+          }
+        };
+
+        const updateCarousel = () => {
+          if (slides.length === 0) return;
+          calculateCarousel();
+          const translateX = -currentIndex * slideWidth;
+          blogCarousel.style.transform = `translateX(${-translateX}px)`;
+        };
+
+        const initCarousel = () => {
+          // Initialize carousel buttons (prev/next)
+          slides = document.querySelectorAll(".blog-carousel .slide");
+          const prevBtn = document.querySelector(
+            ".blog-carousel .carousel-btn.prev"
+          );
+          const nextBtn = document.querySelector(
+            ".blog-carousel .carousel-btn.next"
+          );
+
+          if (!slides.length || !prevBtn || !nextBtn) {
+            // Retry if elements aren't ready yet
+            setTimeout(initCarousel, 50);
+            return;
+          }
+
+          carouselContainer = document.querySelector(
+            ".blog-carousel .carousel-container"
+          );
+
+          if (!carouselContainer || !slides[0]) return;
+
+          // Calculate initial dimensions
+          calculateCarousel();
+
+          // Initialize position
+          updateCarousel();
+
+          // Add event listeners (using once: false allows multiple calls)
+          prevBtn.onclick = function () {
+            if (currentIndex === 0) {
+              currentIndex = maxIndex; // Loop to last position
+            } else {
+              currentIndex--;
+            }
+            updateCarousel();
+          };
+
+          nextBtn.onclick = function () {
+            if (currentIndex >= maxIndex) {
+              currentIndex = 0; // Loop back to start
+            } else {
+              currentIndex++;
+            }
+            updateCarousel();
+          };
+
+          // Handle window resize with debounce
+          let resizeTimeout;
+          const handleResize = () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+              calculateCarousel();
+              updateCarousel();
+            }, 150);
+          };
+
+          // Add resize listener
+          window.addEventListener("resize", handleResize);
+        };
+
+        // Wait for layout to be calculated
+        setTimeout(initCarousel, 100);
+      });
+
+      const courses = [
+        {
+          title: "دورة تدريبية للياقة البدنية عبر الإنترنت",
+          image: "../assets/images/slider1.jpg",
+          price: "$15.00",
+          time: "05:02 PM",
+          date: "Oct, 5, 2025",
+        },
+        {
+          title: "دورة تدريبية للياقة البدنية عبر الإنترنت",
+          image: "../assets/images/slider2.jpg",
+          price: "$15.00",
+          time: "05:02 PM",
+          date: "Oct, 5, 2025",
+        },
+        {
+          title: "دورة تدريبية للياقة البدنية عبر الإنترنت",
+          image: "../assets/images/slider3.jpg",
+          price: "$15.00",
+          time: "05:02 PM",
+          date: "Oct, 5, 2025",
+        },
+        {
+          title: "دورة تدريبية للياقة البدنية عبر الإنترنت",
+          image: "../assets/images/slider4.jpg",
+          price: "$15.00",
+          time: "05:02 PM",
+          date: "Oct, 5, 2025",
+        },
+        {
+          title: "دورة تدريبية للياقة البدنية عبر الإنترنت",
+          image: "../assets/images/slider4.jpg",
+          price: "$15.00",
+          time: "05:02 PM",
+          date: "Oct, 5, 2025",
+        },
+        {
+          title: "دورة تدريبية للياقة البدنية عبر الإنترنت",
+          image: "../assets/images/slider4.jpg",
+          price: "$15.00",
+          time: "05:02 PM",
+          date: "Oct, 5, 2025",
+        },
+        {
+          title: "دورة تدريبية للياقة البدنية عبر الإنترنت",
+          image: "../assets/images/slider4.jpg",
+          price: "$15.00",
+          time: "05:02 PM",
+          date: "Oct, 5, 2025",
+        },
+      ];
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const carousel = document.querySelector(".courses-carousel .carousel");
+
+        if (!carousel) return;
+
+        // Clear existing slides (if any)
+        carousel.innerHTML = "";
+
+        // Loop over courses array
+        courses.forEach((course) => {
+          const slide = document.createElement("div");
+          slide.classList.add("slide");
+          slide.innerHTML = `
+            <article class="course-card">
+              <div style="position: relative">
+                <img src="${course.image}" alt="دورة تدريبية" class="course-image" />
+                <div class="course-price">${course.price}</div>
+              </div>
+              <div class="course-content">
+                <div class="course-meta">
+                  <div class="flex-row align-center" style="gap: 4px">
+                    <span>${course.time}</span>
+                    <img src="../assets/icons/time.svg" alt="وقت" style="width: 14px; height: 14px" />
+                  </div>
+                  <div class="flex-row align-center" style="gap: 4px">
+                    <span>${course.date}</span>
+                    <img src="../assets/icons/calender.svg" alt="تاريخ" style="width: 16px; height: 16px" />
+                  </div>
+                </div>
+                <h3 class="course-title">${course.title}</h3>
+              </div>
+            </article>
+          `;
+          carousel.appendChild(slide);
+        });
+
+        // Wait for slides to be rendered and images loaded before calculating dimensions
+        let currentIndex = 0;
+        let maxIndex = 0;
+        let slideWidth = 0;
+        let slides = [];
+        let carouselContainer = null;
+
+        const getGap = () => {
+          // Read gap from computed CSS style to match responsive breakpoints
+          const carouselElement = document.querySelector(
+            ".courses-carousel .carousel"
+          );
+          if (carouselElement) {
+            const computedStyle = window.getComputedStyle(carouselElement);
+            const gap = computedStyle.gap || computedStyle.columnGap;
+            // Parse gap value (could be "22px" or "1.375rem" etc.)
+            const gapValue = parseFloat(gap);
+            return isNaN(gapValue) ? 22 : gapValue;
+          }
+          // Fallback based on window width
+          const width = window.innerWidth;
+          if (width <= 639) return 12;
+          if (width <= 767) return 16;
+          if (width <= 1023) return 18;
+          if (width <= 1279) return 20;
+          return 22;
+        };
+
+        const calculateCarousel = () => {
+          if (!slides.length || !carouselContainer || !slides[0]) return;
+
+          const gap = getGap();
+          // Get actual rendered width of the slide (including card)
+          const slideElement = slides[0];
+          const cardElement = slideElement.querySelector(".course-card");
+          const actualSlideWidth = cardElement
+            ? cardElement.offsetWidth
+            : slideElement.offsetWidth;
+          slideWidth = actualSlideWidth + gap;
+
+          const containerWidth = carouselContainer.offsetWidth;
+          const visibleSlides = Math.max(
+            1,
+            Math.floor(containerWidth / slideWidth)
+          );
+
+          // Calculate max index - allow scrolling to show all slides
+          maxIndex = Math.max(0, slides.length - visibleSlides);
+
+          // Ensure currentIndex doesn't exceed maxIndex
+          if (currentIndex > maxIndex) {
+            currentIndex = maxIndex;
+          }
+        };
+
+        const updateCarousel = () => {
+          if (slides.length === 0) return;
+          calculateCarousel();
+          const translateX = -currentIndex * slideWidth;
+          carousel.style.transform = `translateX(${-translateX}px)`;
+        };
+
+        const initCarousel = () => {
+          // Initialize carousel buttons (prev/next)
+          slides = document.querySelectorAll(".courses-carousel .slide");
+          const prevBtn = document.querySelector(
+            ".courses-carousel .carousel-btn.prev"
+          );
+          const nextBtn = document.querySelector(
+            ".courses-carousel .carousel-btn.next"
+          );
+
+          if (!slides.length || !prevBtn || !nextBtn) {
+            // Retry if elements aren't ready yet
+            setTimeout(initCarousel, 50);
+            return;
+          }
+
+          carouselContainer = document.querySelector(
+            ".courses-carousel .carousel-container"
+          );
+
+          if (!carouselContainer || !slides[0]) return;
+
+          // Calculate initial dimensions
+          calculateCarousel();
+
+          // Initialize position
+          updateCarousel();
+
+          // Add event listeners (using once: false allows multiple calls)
+          prevBtn.onclick = function () {
+            if (currentIndex === 0) {
+              currentIndex = maxIndex; // Loop to last position
+            } else {
+              currentIndex--;
+            }
+            updateCarousel();
+          };
+
+          nextBtn.onclick = function () {
+            if (currentIndex >= maxIndex) {
+              currentIndex = 0; // Loop back to start
+            } else {
+              currentIndex++;
+            }
+            updateCarousel();
+          };
+
+          // Handle window resize with debounce
+          let resizeTimeout;
+          const handleResize = () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+              calculateCarousel();
+              updateCarousel();
+            }, 150);
+          };
+
+          // Add resize listener
+          window.addEventListener("resize", handleResize);
+        };
+
+        // Wait for layout to be calculated
+        setTimeout(initCarousel, 100);
+      });
+
+      // More Courses Carousel with Enhanced Card Design
+      const moreCourses = [
+        {
+          title: "دورة تدريبية للياقة البدنية عبر الإنترنت",
+          image: "../assets/images/slider1.jpg",
+          price: "Free",
+          originalPrice: "",
+          duration: "12 Hours",
+          enrollments: "1,400",
+          description:
+            "تأسس معهد رواد اللياقة للتدريب في ديسمبر من عام 2017، وتخصص منذ تأسيسه في مجال التدريب الـ",
+          engagement: "83.6K",
+          rating: "4.9",
+          reviews: "466",
+        },
+        {
+          title: "دورة تدريبية للياقة البدنية عبر الإنترنت",
+          image: "../assets/images/slider2.jpg",
+          price: "$15.00",
+          originalPrice: "$30.00",
+          duration: "12 Hours",
+          enrollments: "1,400",
+          description:
+            "تأسس معهد رواد اللياقة للتدريب في ديسمبر من عام 2017، وتخصص منذ تأسيسه في مجال التدريب الـ",
+          engagement: "83.6K",
+          rating: "4.9",
+          reviews: "466",
+        },
+        {
+          title: "دورة تدريبية للياقة البدنية عبر الإنترنت",
+          image: "../assets/images/slider3.jpg",
+          price: "Free",
+          originalPrice: "",
+          duration: "12 Hours",
+          enrollments: "1,400",
+          description:
+            "تأسس معهد رواد اللياقة للتدريب في ديسمبر من عام 2017، وتخصص منذ تأسيسه في مجال التدريب الـ",
+          engagement: "3.6K",
+          rating: "4.9",
+          reviews: "466",
+        },
+        {
+          title: "دورة تدريبية للياقة البدنية عبر الإنترنت",
+          image: "../assets/images/slider4.jpg",
+          price: "$20.00",
+          originalPrice: "",
+          duration: "15 Hours",
+          enrollments: "2,100",
+          description:
+            "تأسس معهد رواد اللياقة للتدريب في ديسمبر من عام 2017، وتخصص منذ تأسيسه في مجال التدريب الـ",
+          engagement: "95.2K",
+          rating: "4.8",
+          reviews: "523",
+        },
+        {
+          title: "دورة تدريبية للياقة البدنية عبر الإنترنت",
+          image: "../assets/images/slider1.jpg",
+          price: "$25.00",
+          originalPrice: "$50.00",
+          duration: "18 Hours",
+          enrollments: "890",
+          description:
+            "تأسس معهد رواد اللياقة للتدريب في ديسمبر من عام 2017، وتخصص منذ تأسيسه في مجال التدريب الـ",
+          engagement: "67.3K",
+          rating: "4.7",
+          reviews: "389",
+        },
+        {
+          title: "دورة تدريبية للياقة البدنية عبر الإنترنت",
+          image: "../assets/images/slider2.jpg",
+          price: "Free",
+          originalPrice: "",
+          duration: "10 Hours",
+          enrollments: "3,200",
+          description:
+            "تأسس معهد رواد اللياقة للتدريب في ديسمبر من عام 2017، وتخصص منذ تأسيسه في مجال التدريب الـ",
+          engagement: "120.5K",
+          rating: "5.0",
+          reviews: "892",
+        },
+        {
+          title: "دورة تدريبية للياقة البدنية عبر الإنترنت",
+          image: "../assets/images/slider3.jpg",
+          price: "$18.00",
+          originalPrice: "",
+          duration: "14 Hours",
+          enrollments: "1,750",
+          description:
+            "تأسس معهد رواد اللياقة للتدريب في ديسمبر من عام 2017، وتخصص منذ تأسيسه في مجال التدريب الـ",
+          engagement: "78.9K",
+          rating: "4.6",
+          reviews: "445",
+        },
+      ];
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const moreCarousel = document.querySelector(
+          ".more-courses .courses-carousel .carousel"
+        );
+
+        if (!moreCarousel) return;
+
+        // Clear existing slides (if any)
+        moreCarousel.innerHTML = "";
+
+        // Loop over moreCourses array
+        moreCourses.forEach((course) => {
+          const slide = document.createElement("div");
+          slide.classList.add("slide");
+          const priceHTML = course.originalPrice
+            ? `<div class="course-price"><span style="text-decoration: line-through; opacity: 0.7; font-size: 14px; display: block;">${course.originalPrice}</span>${course.price}</div>`
+            : `<div class="course-price">${course.price}</div>`;
+
+          // Generate star rating HTML
+          const ratingNum = parseFloat(course.rating);
+          const starsHTML = Array(5)
+            .fill(0)
+            .map((_, i) => {
+              const isFilled = i < Math.floor(ratingNum);
+              return `<span style="color: #f7941f; font-size: 16px;">${
+                isFilled ? "★" : "☆"
+              }</span>`;
+            })
+            .join("");
+
+          slide.innerHTML = `
+            <article class="course-card">
+              <div style="position: relative">
+                <img src="${course.image}" alt="دورة تدريبية" class="course-image" />
+                ${priceHTML}
+                <div style="position: absolute; top: 12px; right: 12px; display: flex; gap: 8px; z-index: 3;">
+                 <!-- Heart Button -->
+<div style="background-color: rgba(247, 148, 31, 0.9); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+  <img src="../assets/icons/heart.svg" alt="Heart" style="width: 16px; height: 16px;" />
+</div>
+
+<!-- Notification Button -->
+<div style="background-color: rgba(247, 148, 31, 0.9); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+  <img src="../assets/icons/notification.svg" alt="Notification" style="width: 16px; height: 16px;" />
+</div>
+
+                </div>
+              </div>
+              <div class="course-content">
+                <div class="course-meta">
+                  <div class="flex-row align-center" style="gap: 4px">
+                    <span>${course.duration}</span>
+                    <img src="../assets/icons/time.svg" alt="وقت" style="width: 14px; height: 14px" />
+                  </div>
+                  <div class="flex-row align-center" style="gap: 4px">
+                    <span>${course.enrollments}</span>
+                    <span style="font-size: 14px;">📋</span>
+                  </div>
+                </div>
+                <h3 class="course-title">${course.title}</h3>
+                <p class="course-description">${course.description}</p>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px;">
+                  <span style="font-size: 14px; color: #666; font-weight: 600;">${course.engagement}</span>
+                  <div class="course-rating" style="display: flex; align-items: center; gap: 6px;">
+                    <div class="rating-stars" style="display: flex; gap: 2px;">
+                      ${starsHTML}
+                    </div>
+                    <span style="font-size: 14px; color: #232323; font-weight: 600;">${course.rating} (${course.reviews})</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          `;
+          moreCarousel.appendChild(slide);
+        });
+
+        // Initialize more courses carousel
+        let moreCurrentIndex = 0;
+        let moreMaxIndex = 0;
+        let moreSlideWidth = 0;
+        let moreSlides = [];
+        let moreCarouselContainer = null;
+
+        const getMoreGap = () => {
+          const carouselElement = document.querySelector(
+            ".more-courses .courses-carousel .carousel"
+          );
+          if (carouselElement) {
+            const computedStyle = window.getComputedStyle(carouselElement);
+            const gap = computedStyle.gap || computedStyle.columnGap;
+            const gapValue = parseFloat(gap);
+            return isNaN(gapValue) ? 22 : gapValue;
+          }
+          const width = window.innerWidth;
+          if (width <= 639) return 12;
+          if (width <= 767) return 16;
+          if (width <= 1023) return 18;
+          if (width <= 1279) return 20;
+          return 22;
+        };
+
+        const calculateMoreCarousel = () => {
+          if (!moreSlides.length || !moreCarouselContainer || !moreSlides[0])
+            return;
+
+          const gap = getMoreGap();
+          const slideElement = moreSlides[0];
+          const cardElement = slideElement.querySelector(".course-card");
+          const actualSlideWidth = cardElement
+            ? cardElement.offsetWidth
+            : slideElement.offsetWidth;
+          moreSlideWidth = actualSlideWidth + gap;
+
+          const containerWidth = moreCarouselContainer.offsetWidth;
+          const visibleSlides = Math.max(
+            1,
+            Math.floor(containerWidth / moreSlideWidth)
+          );
+
+          moreMaxIndex = Math.max(0, moreSlides.length - visibleSlides);
+
+          if (moreCurrentIndex > moreMaxIndex) {
+            moreCurrentIndex = moreMaxIndex;
+          }
+        };
+
+        const updateMoreCarousel = () => {
+          if (moreSlides.length === 0) return;
+          calculateMoreCarousel();
+          const translateX = -moreCurrentIndex * moreSlideWidth;
+          moreCarousel.style.transform = `translateX(${-translateX}px)`;
+        };
+
+        const initMoreCarousel = () => {
+          moreSlides = document.querySelectorAll(
+            ".more-courses .courses-carousel .slide"
+          );
+          const prevBtn = document.querySelector(
+            ".more-courses .courses-carousel .carousel-btn.prev"
+          );
+          const nextBtn = document.querySelector(
+            ".more-courses .courses-carousel .carousel-btn.next"
+          );
+
+          if (!moreSlides.length || !prevBtn || !nextBtn) {
+            setTimeout(initMoreCarousel, 50);
+            return;
+          }
+
+          moreCarouselContainer = document.querySelector(
+            ".more-courses .courses-carousel .carousel-container"
+          );
+
+          if (!moreCarouselContainer || !moreSlides[0]) return;
+
+          calculateMoreCarousel();
+          updateMoreCarousel();
+
+          prevBtn.onclick = function () {
+            if (moreCurrentIndex === 0) {
+              moreCurrentIndex = moreMaxIndex;
+            } else {
+              moreCurrentIndex--;
+            }
+            updateMoreCarousel();
+          };
+
+          nextBtn.onclick = function () {
+            if (moreCurrentIndex >= moreMaxIndex) {
+              moreCurrentIndex = 0;
+            } else {
+              moreCurrentIndex++;
+            }
+            updateMoreCarousel();
+          };
+
+          let resizeTimeout;
+          const handleResize = () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+              calculateMoreCarousel();
+              updateMoreCarousel();
+            }, 150);
+          };
+
+          window.addEventListener("resize", handleResize);
+        };
+
+        setTimeout(initMoreCarousel, 100);
+      });
+
+      // Subscriptions Carousel
+      const subscriptions = [
+        {
+          title: "دورة تدريبية للياقة البدنية عبر الإنترنت",
+          image: "../assets/images/slider1.jpg",
+          price: "$15.00",
+          description:
+            "تأسس معهد رواد اللياقة للتدريب في ديسمبر من عام 2017، وتخصص منذ تأسيسه في مجال التدريب الـ",
+        },
+        {
+          title: "دورة تدريبية للياقة البدنية عبر الإنترنت",
+          image: "../assets/images/slider2.jpg",
+          price: "$15.00",
+          description:
+            "تأسس معهد رواد اللياقة للتدريب في ديسمبر من عام 2017، وتخصص منذ تأسيسه في مجال التدريب الـ",
+        },
+        {
+          title: "دورة تدريبية للياقة البدنية عبر الإنترنت",
+          image: "../assets/images/slider3.jpg",
+          price: "$15.00",
+          description:
+            "تأسس معهد رواد اللياقة للتدريب في ديسمبر من عام 2017، وتخصص منذ تأسيسه في مجال التدريب الـ",
+        },
+        {
+          title: "دورة تدريبية للياقة البدنية عبر الإنترنت",
+          image: "../assets/images/slider4.jpg",
+          price: "$15.00",
+          description:
+            "تأسس معهد رواد اللياقة للتدريب في ديسمبر من عام 2017، وتخصص منذ تأسيسه في مجال التدريب الـ",
+        },
+        {
+          title: "دورة تدريبية للياقة البدنية عبر الإنترنت",
+          image: "../assets/images/slider4.jpg",
+          price: "$15.00",
+          description:
+            "تأسس معهد رواد اللياقة للتدريب في ديسمبر من عام 2017، وتخصص منذ تأسيسه في مجال التدريب الـ",
+        },
+        {
+          title: "دورة تدريبية للياقة البدنية عبر الإنترنت",
+          image: "../assets/images/slider4.jpg",
+          price: "$15.00",
+          description:
+            "تأسس معهد رواد اللياقة للتدريب في ديسمبر من عام 2017، وتخصص منذ تأسيسه في مجال التدريب الـ",
+        },
+        {
+          title: "دورة تدريبية للياقة البدنية عبر الإنترنت",
+          image: "../assets/images/slider4.jpg",
+          price: "$15.00",
+          description:
+            "تأسس معهد رواد اللياقة للتدريب في ديسمبر من عام 2017، وتخصص منذ تأسيسه في مجال التدريب الـ",
+        },
+        {
+          title: "دورة تدريبية للياقة البدنية عبر الإنترنت",
+          image: "../assets/images/slider4.jpg",
+          price: "$15.00",
+          description:
+            "تأسس معهد رواد اللياقة للتدريب في ديسمبر من عام 2017، وتخصص منذ تأسيسه في مجال التدريب الـ",
+        },
+        {
+          title: "دورة تدريبية للياقة البدنية عبر الإنترنت",
+          image: "../assets/images/slider4.jpg",
+          price: "$15.00",
+          description:
+            "تأسس معهد رواد اللياقة للتدريب في ديسمبر من عام 2017، وتخصص منذ تأسيسه في مجال التدريب الـ",
+        },
+      ];
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const subscriptionsCarousel = document.querySelector(
+          ".subscriptions-carousel .carousel"
+        );
+
+        if (!subscriptionsCarousel) return;
+
+        // Clear existing slides
+        subscriptionsCarousel.innerHTML = "";
+
+        // Loop over subscriptions array
+        subscriptions.forEach((subscription) => {
+          const slide = document.createElement("div");
+          slide.classList.add("slide");
+          slide.innerHTML = `
+            <article class="course-card">
+              <div style="position: relative">
+                <img src="${subscription.image}" alt="باقة اشتراك" class="course-image" />
+                <div class="course-price">${subscription.price}</div>
+              </div>
+              <div class="course-content">
+                <h3 class="course-title">${subscription.title}</h3>
+                <p class="course-description">${subscription.description}</p>
+              </div>
+            </article>
+          `;
+          subscriptionsCarousel.appendChild(slide);
+        });
+
+        // Initialize subscriptions carousel
+        let subsCurrentIndex = 0;
+        let subsMaxIndex = 0;
+        let subsSlideWidth = 0;
+        let subsSlides = [];
+        let subsCarouselContainer = null;
+
+        const getSubsGap = () => {
+          const carouselElement = document.querySelector(
+            ".subscriptions-carousel .carousel"
+          );
+          if (carouselElement) {
+            const computedStyle = window.getComputedStyle(carouselElement);
+            const gap = computedStyle.gap || computedStyle.columnGap;
+            const gapValue = parseFloat(gap);
+            return isNaN(gapValue) ? 22 : gapValue;
+          }
+          const width = window.innerWidth;
+          if (width <= 639) return 12;
+          if (width <= 767) return 16;
+          if (width <= 1023) return 18;
+          if (width <= 1279) return 20;
+          return 22;
+        };
+
+        const calculateSubsCarousel = () => {
+          if (!subsSlides.length || !subsCarouselContainer || !subsSlides[0])
+            return;
+
+          const gap = getSubsGap();
+          const slideElement = subsSlides[0];
+          const cardElement = slideElement.querySelector(".course-card");
+          const actualSlideWidth = cardElement
+            ? cardElement.offsetWidth
+            : slideElement.offsetWidth;
+          subsSlideWidth = actualSlideWidth + gap;
+
+          const containerWidth = subsCarouselContainer.offsetWidth;
+          const visibleSlides = Math.max(
+            1,
+            Math.floor(containerWidth / subsSlideWidth)
+          );
+          subsMaxIndex = Math.max(0, subsSlides.length - visibleSlides);
+
+          if (subsCurrentIndex > subsMaxIndex) {
+            subsCurrentIndex = subsMaxIndex;
+          }
+        };
+
+        const updateSubsCarousel = () => {
+          if (subsSlides.length === 0) return;
+          calculateSubsCarousel();
+          const translateX = -subsCurrentIndex * subsSlideWidth;
+          subscriptionsCarousel.style.transform = `translateX(${-translateX}px)`;
+        };
+
+        const initSubsCarousel = () => {
+          subsSlides = document.querySelectorAll(
+            ".subscriptions-carousel .slide"
+          );
+          const prevBtn = document.querySelector(
+            ".subscriptions-carousel .carousel-btn.prev"
+          );
+          const nextBtn = document.querySelector(
+            ".subscriptions-carousel .carousel-btn.next"
+          );
+
+          if (!subsSlides.length || !prevBtn || !nextBtn) {
+            setTimeout(initSubsCarousel, 50);
+            return;
+          }
+
+          subsCarouselContainer = document.querySelector(
+            ".subscriptions-carousel .carousel-container"
+          );
+
+          if (!subsCarouselContainer || !subsSlides[0]) return;
+
+          calculateSubsCarousel();
+          updateSubsCarousel();
+
+          // Infinite loop function for previous button
+          prevBtn.onclick = function () {
+            if (subsSlides.length === 0) return;
+
+            // Always allow looping - if at start, go to end
+            if (subsCurrentIndex <= 0) {
+              // If all slides fit on screen, loop through all slides
+              if (subsMaxIndex === 0 && subsSlides.length > 1) {
+                subsCurrentIndex = subsSlides.length - 1;
+              } else {
+                subsCurrentIndex =
+                  subsMaxIndex > 0 ? subsMaxIndex : subsSlides.length - 1;
+              }
+            } else {
+              subsCurrentIndex--;
+            }
+            updateSubsCarousel();
+          };
+
+          // Infinite loop function for next button
+          nextBtn.onclick = function () {
+            if (subsSlides.length === 0) return;
+
+            // Always allow looping - if at end, go to start
+            if (subsMaxIndex === 0 && subsSlides.length > 1) {
+              // If all slides fit on screen, loop through all slides
+              if (subsCurrentIndex >= subsSlides.length - 1) {
+                subsCurrentIndex = 0;
+              } else {
+                subsCurrentIndex++;
+              }
+            } else if (subsCurrentIndex >= subsMaxIndex) {
+              subsCurrentIndex = 0;
+            } else {
+              subsCurrentIndex++;
+            }
+            updateSubsCarousel();
+          };
+
+          // Handle window resize
+          let resizeTimeout;
+          const handleResize = () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+              calculateSubsCarousel();
+              updateSubsCarousel();
+            }, 150);
+          };
+
+          window.addEventListener("resize", handleResize);
+        };
+
+        setTimeout(initSubsCarousel, 100);
+      });
+
+      // Categories Carousel
+      const categories = [
+        {
+          image: "../assets/images/threeFriends.jpg",
+          categoryName: "تغذية رياضية",
+          courseCount: "1",
+        },
+        {
+          image: "../assets/images/mma.jpg",
+          categoryName: "تغذية رياضية",
+          courseCount: "1",
+        },
+        {
+          image: "../assets/images/slider3.jpg",
+          categoryName: "تغذية رياضية",
+          courseCount: "1",
+        },
+        {
+          image: "../assets/images/slider2.jpg",
+          categoryName: "تدريب رياضي",
+          courseCount: "4",
+        },
+        {
+          image: "../assets/images/slider1.jpg",
+          categoryName: "تدريب رياضي",
+          courseCount: "4",
+        },
+        {
+          image: "../assets/images/mma.jpg",
+          categoryName: "تدريب رياضي",
+          courseCount: "4",
+        },
+        {
+          image: "../assets/images/threeFriends.jpg",
+          categoryName: "تدريب رياضي",
+          courseCount: "4",
+        },
+        {
+          image: "../assets/images/mma.jpg",
+          categoryName: "تدريب رياضي",
+          courseCount: "4",
+        },
+      ];
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const categoriesCarousel = document.querySelector(
+          ".categories-carousel .carousel"
+        );
+
+        if (!categoriesCarousel) return;
+
+        // Clear existing slides
+        categoriesCarousel.innerHTML = "";
+
+        // Loop over categories array
+        categories.forEach((category) => {
+          const slide = document.createElement("div");
+          slide.classList.add("slide");
+          slide.innerHTML = `
+            <div class="category-card">
+              <img src="${category.image}" alt="${category.categoryName}" />
+              <div class="category-banner">
+               
+                <div class="category-label">
+  <span>${category.categoryName}</span>
+</div>
+
+<div class="category-count">
+  <span>${category.courseCount} دورات</span>
+</div>
+
+
+
+              </div>
+            </div>
+          `;
+          categoriesCarousel.appendChild(slide);
+        });
+
+        // Initialize categories carousel
+        let catsCurrentIndex = 0;
+        let catsMaxIndex = 0;
+        let catsSlideWidth = 0;
+        let catsSlides = [];
+        let catsCarouselContainer = null;
+
+        const getCatsGap = () => {
+          const carouselElement = document.querySelector(
+            ".categories-carousel .carousel"
+          );
+          if (carouselElement) {
+            const computedStyle = window.getComputedStyle(carouselElement);
+            const gap = computedStyle.gap || computedStyle.columnGap;
+            const gapValue = parseFloat(gap);
+            return isNaN(gapValue) ? 22 : gapValue;
+          }
+          const width = window.innerWidth;
+          if (width <= 639) return 12;
+          if (width <= 767) return 16;
+          if (width <= 1023) return 18;
+          if (width <= 1279) return 20;
+          return 22;
+        };
+
+        const calculateCatsCarousel = () => {
+          if (!catsSlides.length || !catsCarouselContainer || !catsSlides[0])
+            return;
+
+          const gap = getCatsGap();
+          const slideElement = catsSlides[0];
+          const cardElement = slideElement.querySelector(".category-card");
+          const actualSlideWidth = cardElement
+            ? cardElement.offsetWidth
+            : slideElement.offsetWidth;
+          catsSlideWidth = actualSlideWidth + gap;
+
+          const containerWidth = catsCarouselContainer.offsetWidth;
+          const visibleSlides = Math.max(
+            1,
+            Math.floor(containerWidth / catsSlideWidth)
+          );
+          catsMaxIndex = Math.max(0, catsSlides.length - visibleSlides);
+
+          if (catsCurrentIndex > catsMaxIndex) {
+            catsCurrentIndex = catsMaxIndex;
+          }
+        };
+
+        const updateCatsCarousel = () => {
+          if (catsSlides.length === 0) return;
+          calculateCatsCarousel();
+          const translateX = -catsCurrentIndex * catsSlideWidth;
+          categoriesCarousel.style.transform = `translateX(${-translateX}px)`;
+        };
+
+        const initCatsCarousel = () => {
+          catsSlides = document.querySelectorAll(".categories-carousel .slide");
+          const prevBtn = document.querySelector(
+            ".categories-carousel .carousel-btn.prev"
+          );
+          const nextBtn = document.querySelector(
+            ".categories-carousel .carousel-btn.next"
+          );
+
+          if (!catsSlides.length || !prevBtn || !nextBtn) {
+            setTimeout(initCatsCarousel, 50);
+            return;
+          }
+
+          catsCarouselContainer = document.querySelector(
+            ".categories-carousel .carousel-container"
+          );
+
+          if (!catsCarouselContainer || !catsSlides[0]) return;
+
+          calculateCatsCarousel();
+          updateCatsCarousel();
+
+          // Infinite loop function for previous button
+          prevBtn.onclick = function () {
+            if (catsSlides.length === 0) return;
+
+            // Always allow looping - if at start, go to end
+            if (catsCurrentIndex <= 0) {
+              // If all slides fit on screen, loop through all slides
+              if (catsMaxIndex === 0 && catsSlides.length > 1) {
+                catsCurrentIndex = catsSlides.length - 1;
+              } else {
+                catsCurrentIndex =
+                  catsMaxIndex > 0 ? catsMaxIndex : catsSlides.length - 1;
+              }
+            } else {
+              catsCurrentIndex--;
+            }
+            updateCatsCarousel();
+          };
+
+          // Infinite loop function for next button
+          nextBtn.onclick = function () {
+            if (catsSlides.length === 0) return;
+
+            // Always allow looping - if at end, go to start
+            if (catsMaxIndex === 0 && catsSlides.length > 1) {
+              // If all slides fit on screen, loop through all slides
+              if (catsCurrentIndex >= catsSlides.length - 1) {
+                catsCurrentIndex = 0;
+              } else {
+                catsCurrentIndex++;
+              }
+            } else if (catsCurrentIndex >= catsMaxIndex) {
+              catsCurrentIndex = 0;
+            } else {
+              catsCurrentIndex++;
+            }
+            updateCatsCarousel();
+          };
+
+          // Handle window resize
+          let resizeTimeout;
+          const handleResize = () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+              calculateCatsCarousel();
+              updateCatsCarousel();
+            }, 150);
+          };
+
+          window.addEventListener("resize", handleResize);
+        };
+
+        setTimeout(initCatsCarousel, 100);
+      });
+
+      // About video play button
+      const aboutVideo = document.querySelector(".about-main-video");
+      const aboutPlayBtn = document.querySelector(".about-play-btn");
+      if (aboutVideo && aboutPlayBtn) {
+        const showBtn = () => {
+          aboutPlayBtn.style.display = "flex";
+        };
+        const hideBtn = () => {
+          aboutPlayBtn.style.display = "none";
+        };
+
+        aboutPlayBtn.addEventListener("click", () => {
+          if (aboutVideo.paused) {
+            aboutVideo.play();
+          } else {
+            aboutVideo.pause();
+          }
+        });
+
+        aboutVideo.addEventListener("play", hideBtn);
+        aboutVideo.addEventListener("pause", showBtn);
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const faqItems = document.querySelectorAll(".faq-item");
+
+        faqItems.forEach((item) => {
+          const question = item.querySelector(".faq-question");
+          const icon = item.querySelector(".faq-icon");
+          const answer = item.querySelector(".faq-answer");
+
+          question.addEventListener("click", () => {
+            const isOpen = item.classList.contains("expanded");
+
+            // Close all
+            faqItems.forEach((other) => {
+              other.classList.remove("expanded");
+              const otherIcon = other.querySelector(".faq-icon");
+              if (otherIcon) otherIcon.textContent = "+";
+            });
+
+            // Open selected
+            if (!isOpen) {
+              item.classList.add("expanded");
+              icon.textContent = "−";
+            }
+          });
+
+          // Accessibility
+          question.setAttribute("tabindex", "0");
+          question.setAttribute("role", "button");
+
+          question.addEventListener("keydown", (e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              question.click();
+            }
+          });
+        });
+      });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Logos for accreditation carousel
+      (function () {
+        const logos = [
+          {
+            src: "../assets/images/darelhekama.jpg",
+            caption: "دار الحكمة",
+            bgColor: "#f7941f",
+          },
+          {
+            src: "../assets/images/darelhekama.jpg",
+            caption: "الشهادات الدولية",
+            bgColor: "#2e5cb8",
+          },
+          {
+            src: "../assets/images/darelhekama.jpg",
+            caption: "الاعتماد الأكاديمي",
+            bgColor: "#1bb5a0",
+          },
+          {
+            src: "../assets/images/darelhekama.jpg",
+            caption: "الشراكات العالمية",
+            bgColor: "#d63447",
+          },
+          {
+            src: "../assets/images/darelhekama.jpg",
+            caption: "الجودة المعتمدة",
+            bgColor: "#6c3483",
+          },
+          {
+            src: "../assets/images/darelhekama.jpg",
+            caption: "التميز الرياضي",
+            bgColor: "#f39c12",
+          },
+        ];
+
+        const carousel = document.querySelector(".logos-carousel .carousel");
+        if (!carousel) return;
+
+        // populate slides
+        logos.forEach((logo) => {
+          const slide = document.createElement("div");
+          slide.className = "logo-slide";
+
+          slide.innerHTML = `
+    <img src="${logo.src}" alt="${logo.caption}" />
+    <div class="logo-caption" style="background-color: ${logo.bgColor};">${logo.caption}</div>
+  `;
+
+          carousel.appendChild(slide);
+        });
+
+        // basic carousel logic (same as other carousels)
+        let currentIndex = 0;
+        const slides = () =>
+          document.querySelectorAll(".logos-carousel .logo-slide");
+        const container = document.querySelector(".logos-carousel");
+
+        const getGap = () => {
+          const computed = window.getComputedStyle(
+            document.querySelector(".logos-carousel .carousel")
+          );
+          return parseFloat(computed.gap) || 18;
+        };
+
+        const calculate = () => {
+          const s = slides();
+          if (!s.length) return { slideWidth: 0, visible: 1, maxIndex: 0 };
+          const gap = getGap();
+          const slideW = s[0].offsetWidth + gap;
+          const visible = Math.max(
+            1,
+            Math.floor(container.offsetWidth / slideW)
+          );
+          const maxIndex = Math.max(0, s.length - visible);
+          if (currentIndex > maxIndex) currentIndex = maxIndex;
+          return { slideWidth: slideW, visible, maxIndex };
+        };
+
+        const update = () => {
+          const { slideWidth } = calculate();
+          const translateX = -currentIndex * slideWidth;
+          document.querySelector(
+            ".logos-carousel .carousel"
+          ).style.transform = `translateX(${translateX}px)`;
+        };
+
+        // buttons
+        const prev = document.querySelector(
+          ".logos-carousel .carousel-btn.prev"
+        );
+        const next = document.querySelector(
+          ".logos-carousel .carousel-btn.next"
+        );
+        prev?.addEventListener("click", () => {
+          const { maxIndex } = calculate();
+          currentIndex = currentIndex <= 0 ? maxIndex : currentIndex - 1;
+          update();
+        });
+        next?.addEventListener("click", () => {
+          const { maxIndex } = calculate();
+          currentIndex = currentIndex >= maxIndex ? 0 : currentIndex + 1;
+          update();
+        });
+
+        // init
+        window.addEventListener("resize", () => {
+          setTimeout(update, 120);
+        });
+        setTimeout(update, 100);
+      })();
+    </script>
+  </body>
+</html>
